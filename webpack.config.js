@@ -160,7 +160,6 @@ module.exports = {
                   },
                   'css-loader'
                 ],
-                // npm i style-loader css-loader -D
             },
             
             /** SCSS/SAAS */
@@ -178,7 +177,8 @@ module.exports = {
                   'css-loader',
                   'sass-loader'
                 ],
-                // npm i style-loader css-loader sass sass-loader -D  npm install node-sass
+                // npm i style-loader css-loader sass sass-loader -D  
+                // npm install node-sass
             },
             /** Картинки */
             {
