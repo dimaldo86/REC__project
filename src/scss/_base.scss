@@ -1,0 +1,23 @@
+
+@import './variables';
+* {
+    font-family: $font-main;
+    font-style: normal;
+    color: $blue-text;
+  }
+  html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  *,
+  *:after,
+  *:before {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+  }
+  .container {
+    max-width: 1130px;
+  
+    margin: 0 auto;
+    padding: 0 10px;
+  }

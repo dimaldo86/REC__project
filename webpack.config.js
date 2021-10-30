@@ -122,6 +122,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true, // для очистки папки dist при новом билде
         assetModuleFilename: 'img/[name][ext]',
+        publicPath:''
     },
     plugins: plugins(),
     
@@ -168,17 +169,39 @@ module.exports = {
                 use: [
                   {
                     loader: MiniCssExtractPlugin.loader,
-                    // options: {
-                    //   publicPath: (resourcePath, context) => {
-                    //     return path.relative(path.dirname(resourcePath), context) + '/';
-                    //   },
-                    // }
+                    options: {
+                      publicPath: (resourcePath, context) => {
+                        return path.relative(path.dirname(resourcePath), context) + '/';
+                      },
+                    }
                   },
                   'css-loader',
                   'sass-loader'
                 ],
                 // npm i style-loader css-loader sass sass-loader -D  
                 // npm install node-sass
+            },
+            {
+              test: /\.(scss)$/,
+              use: [ {
+                // Выполнить действия postcss
+                loader: 'postcss-loader',
+                options: {
+                  // `postcssOptions` требуется для postcss 8.x;
+                  // если Вы используете postcss 7.x пропустите ключ
+                  postcssOptions: {
+                    // плагины postcss, можно экспортировать в postcss.config.js
+                    plugins: function () {
+                      return [
+                        require('autoprefixer')
+                      ];
+                    }
+                  }
+                }
+              }, {
+                // компилирует Sass в CSS
+                loader: 'sass-loader'
+              }]
             },
             /** Картинки */
             {
