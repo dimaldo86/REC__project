@@ -1,0 +1,24 @@
+{
+  "name": "rec_project",
+  "version": "1.0.0",
+  "description": "start new project",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimaldo86/REC__project.git"
+  },
+  "keywords": [
+    "javascript",
+    "html",
+    "scss"
+  ],
+  "author": "Dmitry <dimaldo86ne@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimaldo86/REC__project/issues"
+  },
+  "homepage": "https://github.com/dimaldo86/REC__project#readme"
+}
