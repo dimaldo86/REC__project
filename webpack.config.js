@@ -103,7 +103,6 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     entry: './index.js',
     mode: 'development',
-    devtool: isProd ? false : 'source-map', // изпользуем в dev
     //npm install webpack-dev-server --save-dev
     devServer: {
         /** Будет запускать сервер на localhost:8080 в этой папке*/
@@ -125,6 +124,7 @@ module.exports = {
         publicPath:''
     },
     plugins: plugins(),
+    devtool: isProd ? false : 'source-map', // изпользуем в dev
     
     module: {
         rules: [

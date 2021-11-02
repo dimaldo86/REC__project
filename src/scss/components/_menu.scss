@@ -1,0 +1,219 @@
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    min-height: 47px;
+}
+.logo__link {
+    width: 195px;
+    height: 47px;
+    transition: 0.3s all linear;
+    cursor: pointer;
+
+    &:hover {
+        // opacity: 0.6;
+        transform: translateY(-1px);
+    }
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding-left: 0;
+    border-top: 1px solid $blue-text;
+
+    &__item {
+        list-style-type: none;
+        padding: 11px 0px; 
+
+        &--active {
+            list-style-type: none;
+            padding: 11px 0px;
+            transition: all .3s linear;
+            border-bottom: 2px solid $secondary-color;
+        }
+
+        &-arrow {
+            display: inline-block;
+            width: 10px;
+            height: 12px;
+            margin-left: 8px;
+            path {
+                fill: $secondary-color;
+            }
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $blue-text;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        transition: all 0.3s linear;
+
+        &:hover {
+            color: $secondary-color;
+        }
+
+    }
+}
+// burger uslugi
+.burger__icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.red__burger {
+    display:inline-block;
+    width: 16px;
+    height: 13px;
+    margin-right: 8px;
+    margin-top: 4px;
+
+
+    div {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 16px;
+        height: 1.5px;
+        background-color: $secondary-color;
+
+        &::before, &::after{
+            content:'';
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 1.5px;
+            background-color: $secondary-color;
+        }
+
+        &:before {
+            top: 5.5px;
+        }
+
+        &::after {
+            top: 11px;
+        }
+    }
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        list-style-type: none;
+    }
+
+    &__link {
+        position: relative;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: $blue-text;
+        transition: all .3s linear;
+
+        &:hover {
+            color:$secondary-color;
+        }
+    }
+}
+
+.submenu-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 0 30px 35px ;
+
+    &__item {
+        list-style-type: decimal;
+        color: $blue-text;
+        transition: all .3s linear;
+        padding: 13px 0;
+
+        &:hover {
+            color:$secondary-color
+        }
+
+        &::marker {
+            text-transform: uppercase;
+        }
+
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        color: $blue-text;
+        padding: 5px 0;
+        border-bottom:1px solid $blue-text;
+        transition: all .3s linear;
+
+        &:hover {
+            color: $secondary-color;
+            border-bottom:none;
+        }
+    }
+}
+.projectlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 17px;
+    padding-left:0;
+
+    &__item {
+        position: relative;
+        list-style-type: none;
+        margin-top: 13px;
+
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.6;
+        color: $dark-text;
+        padding-left: 12px;
+
+        &::before {
+            content:'';
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            top: 7px;
+            left: -13px;
+            border-radius: 50%;
+            background-color:$secondary-color;
+        }
+    }
+}
+.plus {
+    position: relative;
+    display: inline-block;
+    top: -10px;
+    right:  -650px;
+    width: 13px;
+    height: 1.5px;
+    background-color:$secondary-color;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 1.5px;
+        background-color:$secondary-color;
+        transform: rotate(90deg);
+
+    }
+
+}
