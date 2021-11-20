@@ -1,0 +1,99 @@
+.burger {
+    display:inline-block;
+
+    &.open {
+        div {
+            transition-duration: 0.1s;
+            transition-delay: .25s;
+            background: transparent;
+            &:before {
+                transition: top .25s, transform .25s .25s;
+                top: 3px;
+                transform: rotateZ(360deg);
+            }
+            &:after {
+                transition: top 0.4s, transform .25s .25s;
+                top: 3px;
+                transform: rotateZ(360deg);
+            }
+        }
+    }
+
+    div {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+
+        &::before, &::after{
+            content:'';
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 1.5px;
+            transition-duration: .25s;
+            transition: transform .25s, top .25s .25s;
+        }
+
+        &:before {
+            top: 5.5px;
+        }
+
+        &::after {
+            top: 11px;
+        }
+    }
+}
+.burger-red {
+    width: 16px;
+    height: 13px;
+    margin-right: 8px;
+    margin-top: 4px;
+
+    div {
+        width: 16px;
+        height: 1.5px;
+        background-color: $secondary-color;
+
+        &::before, &::after {
+            background-color: $secondary-color;
+        }  
+    }
+}
+
+@media (max-width:767px) {
+    .burger-blue {
+        width: 24px;
+        height: 16px;
+        cursor: pointer;
+
+        div {
+            width: 100%;
+            height: 1px;
+            background-color:$blue-text;
+
+            &::before, &::after {
+                background-color: $blue-text;
+            }  
+        }
+
+        &.open-blue {
+            div {
+                transition-duration: 0.1s;
+                transition-delay: .25s;
+                background: transparent;
+                &:before {
+                    transition: top .25s, transform .25s .25s, background-color .25s .25s;
+                    top: 3px;
+                    transform: rotateZ(-45deg);
+                    background-color:$secondary-color;
+                }
+                &:after {
+                    transition: top 0.4s, transform .25s .25s, background-color .25s .25s;
+                    top: 3px;
+                    transform: rotateZ(45deg);
+                    background-color:$secondary-color;
+                }
+            }
+        }
+    }
+}

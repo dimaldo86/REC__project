@@ -10,14 +10,14 @@
     <title>REC</title>
 </head>
 <body>
-
+<!-- header start  -->
+    <div class="overlay"></div>
     <header class="header">
 
         <div class="container">
 
-            <div class="row">
-                <div class="col-md-3 offset-md-9">
-
+            <div class="row justify-content-sm-end ">
+               
                     <div class="top">
                         <div class="top__flag">
                             <div id="rus" class="top__flag-lang flag__russia">
@@ -42,31 +42,52 @@
 
                     </div>  <!--top-->
 
-                </div>
             </div> <!--row-->
 
             <div class="row">
-                <div class="header__wrapper">
+                <nav class="nav">
 
                     <div class="col-md-3">
-                        <div href="#" class="logo__link">
+                        <div href="#" class="logo__link ">
                             <img src="./img/svg/Logo.svg" alt="REC">
                         </div>
                     </div>
-
-                    <div class="col-md-9">
+                    <div class="col-md-9 ">
                         <ul class="menu">
-                            <!-- <li class="menu__item--active">
-                                <a href="#" class="menu__link">Главная</a>
+                            <div class="top">
+                                <div class="top__flag">
+                                    <div id="rus" class="top__flag-lang flag__russia">
+                                        <img src="./img/top/Russia.jpg" alt="Russia" >
+                                    </div>
+                        
+                                    <div id="uk" class="top__flag-lang flag__uk">
+                                        <img src="./img/top/United_Kingdom.jpg" 
+                                        alt="UK">
+                                    </div>
+        
+                                    <!-- Стрелка вниз -->
+                                    <svg class=" top__flag-arrow bottom__arrow" viewBox="0 0 5 9">
+                                        <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                                    </svg>
+                                </div>  <!--top__flag-->
+        
+            
+                               <div class="top__feedback">
+                                    <a href="#" class="top__feedback-link">Обратная связь</a>
+                               </div>
+        
+                            </div>  <!--top-->
+                            <li class="menu__item">
+                                <a href="#" class="menu__link active-link">Главная</a>
                             </li>
                             <li class="menu__item">
                                 <a href="#" class="menu__link">О компании</a>
                                 <svg class="menu__item-arrow  bottom__arrow" viewBox="0 0 5 9">
                                     <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
                                 </svg>
-                            </li> -->
+                            </li>
                             <li class="menu__item burger__icon">
-                                <div class="red__burger">
+                                <div class="burger burger-red">
                                     <div></div>
                                 </div>
                                 <a href="#" class="menu__link">Услуги</a>
@@ -75,20 +96,21 @@
                                         <a href="#" class="submenu__link">
                                             ПРОЕКТИРОВАНИЕ
                                         </a>
-                                        <div class="plus"></div>
                                         <ol class="submenu-menu" start="1">
                                             <li class="submenu-menu__item">
                                                 <a href="#" class="submenu-menu__link">
                                                      Подбор и выбор проектной организации
                                                 </a>
                                                 <ul class="projectlist">
-                                                    <li class="projectlist__item">Организация , проведение , получения предложений от участников проведение открытого тендера , процедуры переговоров или иной процедуры по выбору генпроектировщика .
+                                                    <li class="projectlist__item">
+                                                        Организация , проведение , получения предложений от участников проведение открытого тендера , процедуры переговоров или иной процедуры по выбору генпроектировщика .
                                                     </li>
                                                     <li class="projectlist__item">   
                                                         Выбор , подбор и анализ всех предложений от организаций,участвующий в 
                                                         процедуре выбора генпроектировщика
                                                     </li>
-                                                    <li class="projectlist__item"> Определение по согласованию с заказчиком и подрядчиком объемов, этапов истоимости проектных работ; <br />
+                                                    <li class="projectlist__item"> 
+                                                        Определение по согласованию с заказчиком и подрядчиком объемов, этапов истоимости проектных работ; <br />
                                                         Контроль и помощь в заключения договора на ПИР
                                                     </li>
                                                 </ul>
@@ -98,7 +120,8 @@
                                                     Сопровождение , анализ и контроль ПИР
                                                 </a>
                                                 <ul class="projectlist">
-                                                    <li class="projectlist__item">Составление ТЗ на проектирование ,согласование всех технологических и технических решений по проекту между заказчиком и проектировщиком ,со снабжающими и эксплуатирующими организациями по месту нахождения объекта
+                                                    <li class="projectlist__item">
+                                                        Составление ТЗ на проектирование ,согласование всех технологических и технических решений по проекту между заказчиком и проектировщиком ,со снабжающими и эксплуатирующими организациями по месту нахождения объекта
                                                     </li>
                                                     <li class="projectlist__item">
                                                         Сбор технических условий ( ТУ ) , их оптимизация ,рационализация и минимизация,контроль их выполнения в рабочем проекте
@@ -119,11 +142,29 @@
                                         <a href="#" class="submenu__link">
                                             строительство
                                         </a>
-                                        <div class="plus"></div>
+                                        <ol class="submenu-menu" start="1">
+                                            <li class="submenu-menu__item">
+                                                <a href="#" class="submenu-menu__link">
+                                                     Подбор и выбор проектной организации
+                                                </a>
+                                                <ul class="projectlist">
+                                                    <li class="projectlist__item">
+                                                        Организация , проведение , получения предложений от участников проведение открытого тендера , процедуры переговоров или иной процедуры по выбору генпроектировщика .
+                                                    </li>
+                                                    <li class="projectlist__item">   
+                                                        Выбор , подбор и анализ всех предложений от организаций,участвующий в 
+                                                        процедуре выбора генпроектировщика
+                                                    </li>
+                                                    <li class="projectlist__item"> 
+                                                        Определение по согласованию с заказчиком и подрядчиком объемов, этапов истоимости проектных работ; <br />
+                                                        Контроль и помощь в заключения договора на ПИР
+                                                    </li>
+                                                </ul>
+                                            </li>
                                     </li>
                                 </ul>
                             </li>
-                            <!-- <li class="menu__item">
+                            <li class="menu__item">
                                 <a href="#" class="menu__link">Объекты</a>
                                 <svg class="menu__item-arrow bottom__arrow" viewBox="0 0 5 9">
                                     <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
@@ -137,16 +178,108 @@
                             </li>
                             <li class="menu__item">
                                 <a href="#" class="menu__link">Контакты</a>
-                            </li> -->
+                            </li>
                         </ul>
+                    </div> <!--col-md-9-->
+
+                     <!--burger-->
+                     <div class="burger burger-blue">
+                        <div ></div>
                     </div>
 
-                </div> <!--header__wrapper-->
+                </nav> <!--nav-->
             </div> <!--row-->
+    </header> 
+<!--header end-->
+<!--main start-->
+    <main>
+<!--promo start-->     
+        <section class="promo">
+            <div class="container">
 
-        </div>  <!--container-->
+                <div class="row">
+                    <div class="col-lg-9 col-md-10">
+                        <h1 class="promo__title">  
+                           <span class="yellow">Роспромконсалт — от идеи</span> <span> до реализации </span> <br> <span>проекта.</span> 
+                        </h1>
+                    </div>
+                </div> <!--row-->
 
-    </header>
-    
+                <div class="row">
+                    <div class="col-3">
+                        <div class="promo__btn">
+                            <a href="#">УЗНАТЬ БОЛЬШЕ</a>
+                            <i class="bi bi-arrow-left"></i>
+                        </div>
+                    </div>
+                </div> <!--row-->
+            </div> <!--container-->
+        </section> <!--promo-->
+<!--promo end-->   
+<!--service start-->
+        <section class="service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="service__title">Услуги <span>/ служба заказчика / инжиниринг</span></h2>
+                        <div class="service__subtitle">
+                            <div class="service__subtitle-header">Проектирование</div>
+                            <div class="service__subtitle-header">Строительство</div>
+                        </div>
+                    </div>
+                </div> <!--row-->
+                  
+                <div class="row row-mt">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service__card">
+                            <div class="service__desc">Выбор генерального  подрядчика</div>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service__card">
+                            <div class="service__desc">Строительный контроль</div>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 ">
+                        <div class="service__card">
+                            <div class="service__desc">Финансово-
+                                технический надзор</div>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="w-100 d-md-none d-lg-block"></div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service__card">
+                            <div class="service__desc">Организация приемки в эксплуатацию завершенного строительства объекта</div>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service__card">
+                            <div class="service__desc">Строительный контроль</div>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service__card">
+                            <div class="service__desc">Финансово-
+                                технический надзор</div>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                    </div>
+                </div> <!--row-->
+
+                <div class="row">
+                    <div class="col-lg-9 offset-lg-3 col-md-6 offset-md-6">
+                        <div class="service__bg"></div>
+                    </div>
+                </div> <!--row-->
+            </div> <!--container-->
+        </section> 
+<!--service end--> 
+    </main>
+<!--main end-->
 </body>
 </html>

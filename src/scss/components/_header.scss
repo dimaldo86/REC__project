@@ -1,0 +1,33 @@
+.header {
+    width: 100%;
+    min-height: 202px;
+    padding: 50px 0 60px 0;
+    box-shadow: $shadow-header;
+    z-index: 50;
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    transition: all .5s ease; 
+
+    &__fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            opacity: 1;
+            z-index: 100000;
+            box-shadow: $shadow-header;
+            background-color: $white-color;
+    }
+
+    @media (max-width: 991px) {
+        min-height: 160px;
+        padding: 35px 0 40px 0;
+    }
+
+    @media (max-width: 767px) {
+        min-height: 45px;
+        padding: 10px;
+    }
+}

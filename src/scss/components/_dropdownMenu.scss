@@ -1,0 +1,147 @@
+// burger uslugi
+.burger__icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.submenu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    width:85%;
+    max-width: 832px;
+    top:110%;
+    left:12%;
+    background:$lang-bgcolor;
+    border: 1px solid $blue-text;
+    overflow-y: scroll;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+
+    &.show {
+        visibility: visible;
+        opacity: 1;
+        z-index: 99;
+    }
+
+    &__item {
+        list-style-type: none;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.25;
+        text-transform: uppercase;
+        color: $blue-text;
+        transition: all .3s linear;
+
+        &.acc-active, &:hover {
+            color:$secondary-color;
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        &::after {
+            content: '+';
+            margin-bottom: 3px;
+            font-size: 26px;
+            font-weight: 100;
+            color: $secondary-color;
+            transition: all .3s linear;
+        }
+       &.acc-active::after {
+        content: '-';
+       }
+    }
+}
+.submenu-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 45px;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.4s ease-out;
+
+    &__item {
+        list-style-type: decimal;
+        color: $blue-text;
+        transition: all .3s linear;
+        padding: 13px 0;
+
+        &:hover {
+            color:$secondary-color
+        }
+
+        &::marker {
+            text-transform: uppercase;
+        }
+
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        color: $blue-text;
+        padding: 5px 0;
+       text-decoration: underline;
+        transition: all .3s linear;
+
+        &:hover {
+
+            color: $secondary-color;
+           text-decoration: none;
+        }
+    }
+}
+.projectlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 17px;
+    padding-left:0;
+
+    &__item {
+        position: relative;
+        list-style-type: none;
+        margin-top: 13px;
+
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.6;
+        color: $dark-text;
+        padding-left: 12px;
+
+        &::before {
+            content:'';
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            top: 7px;
+            left: -13px;
+            border-radius: 50%;
+            background-color:$secondary-color;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .submenu {
+        &__link {
+            font-size: 14px;
+        }
+    }
+}

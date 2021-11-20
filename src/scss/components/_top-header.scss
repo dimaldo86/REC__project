@@ -1,13 +1,11 @@
  /* top */
  .top {
-    width: 255px;
+    width: 259px;
     height: 33px;
 
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-  
-    margin-top: 50px;
 
     &__flag {
         position: relative;
@@ -27,11 +25,20 @@
         }
     }
     .flag__uk {
-       display: none;
+        display: none;
         width: 30px;
         height: 20px;
         margin-top: 16px;
-        margin-bottom: 20px;
+        // visibility: hidden;
+        // opacity: 0;
+        // z-index: -1;
+        // transition: all 0.3s ease-in-out;
+
+        // &.show {
+        //     visibility: visible;
+        //     opacity: 1;
+        //     z-index: 99;
+        // }
 
         img {
             width: 100%;
