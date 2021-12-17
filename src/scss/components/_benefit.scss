@@ -1,6 +1,6 @@
 .benefit {
-    min-height: 557px;
-    padding: 80px 0 10px 0;
+    min-height: auto;
+    padding: 80px 0 80px 0;
 
     &__title {
         @include title-section;
@@ -540,3 +540,87 @@
     }
 
 }
+
+@media  (max-width: 425px) {
+    .benefit {
+        
+        &__tooltip {
+            display: none;
+        }
+
+        &__title {
+            font-size: 35px;
+            text-align: center;
+            margin-bottom: 4%;
+        }
+
+        &__item {
+            padding: 0;
+
+            &-title {
+                width: 43%;
+                font-size: 14px;
+            }
+
+            &-fc-1,  &-fc-3,  &-fc-5 {
+                flex-direction: row-reverse;
+            }
+
+            &-fc-2, &-fc-4 {
+                flex-direction: row;
+            }
+
+            &-fc-1 {
+
+                .benefit__item-circle {
+                    margin-right: 16%;
+                 }
+            }
+
+            &-fc-2 {
+
+                .benefit__item-circle {
+                    margin-top: 4%;
+                    margin-left: 12%;
+                }
+            }
+
+            &-fc-3 {
+
+                .benefit__item-title {
+                    margin-top: 10%; 
+                }
+
+                .benefit__item-circle {
+                    margin-top: 13%;
+                    margin-right: 17%;
+                 } 
+            }
+
+            &-fc-4 {
+                margin-bottom: 37%; 
+
+                .benefit__item-title {
+                   margin-top: 6%;
+                }
+                .benefit__item-circle {
+                    margin-left: 12%;
+                }
+            }
+
+            &-fc-5 {
+                margin-bottom: 41%;
+
+                .benefit__item-title {
+                    margin-bottom: 20%; 
+                }
+
+                .benefit__item-circle {
+                    margin-bottom: 18%;
+                    margin-right: 17%;
+                 } 
+            }
+        }
+    }
+}
+

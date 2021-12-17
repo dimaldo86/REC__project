@@ -23,18 +23,21 @@
             width:170px;
             font-weight: 600;
             font-size: 18px;
-            color: $blue-text;
+            color: $dark-text;
+            transition: all .3s ease-in;
            
 
             &:hover {
+                color:$blue-text;
                  cursor: pointer;
             }
+            
             &::before {
                 content:'';
                 position: absolute;
                 bottom: -20%;
                 left: -50%;
-                width:70%;
+                width:60%;
                 opacity: 0;
                 height: 2px;
                 background: $secondary-color;

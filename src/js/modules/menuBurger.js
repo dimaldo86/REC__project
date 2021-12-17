@@ -4,7 +4,7 @@ const menuBurger = () => {
             overlay = document.querySelector('.overlay');
 
     const lockScroll = () => {
-                document.body.classList.add('lock');
+                document.body.classList.toggle('lock');
             }
             
     const unlockScroll = () => {

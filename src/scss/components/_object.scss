@@ -1,0 +1,233 @@
+.object {
+    min-height: 1184px;
+    padding: 80px 0;
+    position: relative;
+
+    &__title {
+        @include title-section;
+    }
+
+    &__desc {
+        display:block;
+        width:49%;
+        margin-top: 30px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.6;
+        color: $dark-text;
+        margin-bottom: 0;
+    }
+
+    &__subtitle {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 75px;
+
+        &-header {
+            position: relative;
+            display: inline-block;
+            width:230px;
+            font-weight: 600;
+            font-size: 18px;
+            color: $dark-text;
+            margin-right: 24px;
+            transition: all .3s ease-in;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                color:$blue-text;
+                cursor: pointer;
+            }
+
+            &.active {
+                position: relative;
+                color:$blue-text;
+
+                &::before {
+                    content:'';
+                    position: absolute;
+                    bottom: -20%;
+                    left: 0;
+                    width:60%;
+                    opacity: 1;
+                    height: 2px;
+                    background: $secondary-color;
+                    transition: all .3s ease-in;
+                }
+
+            }
+            
+            &::before {
+                content:'';
+                position: absolute;
+                bottom: -20%;
+                left: -50%;
+                width:60%;
+                opacity: 0;
+                height: 2px;
+                background: $secondary-color;
+                transition: all .3s ease-in;
+            }
+            &:hover:before {
+               left:0;
+               opacity: 1;
+            }
+        }
+       
+    }
+
+
+
+    &__card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        min-height: 346px;  
+
+        &-img {
+            width:93%;
+            align-self: flex-start;
+            z-index: -1;
+
+           img {
+               width:100%;
+               height:100%;
+           }
+        }
+
+        &-body {
+            position: absolute;
+            width:93%;
+            height: 142px;
+            align-self: flex-end;
+            bottom:0;
+            background: $primary-color;
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.08);
+            padding: 32px 0 0 32px;
+            transition: all 0.4s ease-out;
+
+            &:hover {
+                cursor: pointer;
+                background:$secondary-color;
+            }
+
+            h3 {
+                font-family: $font-title;
+                font-weight: normal;
+                font-size: 23px;
+                color: $white-color;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .object {
+        padding: 60px 0;
+
+        &__wrapper {
+            margin-top: 20px;
+        }
+        &__desc {
+            width:65%;
+            margin-top: 24px;
+        }
+        &__card {
+            &-num-3 {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .object {
+        padding: 40px 0;
+
+        &__desc {
+            width:100%;
+           
+        }
+
+       &__card {
+           &-num-1, &-num-2 {
+               margin-top: 1.5rem;
+           }
+
+           &-img {
+               height: 245px;
+           }
+       }
+    }
+}
+
+@media (min-width: 680px) {
+    .object {
+        .col-md-6 {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+    }
+}
+
+
+@media (max-width: 575px) {
+    .object {
+        padding: 20px 0;
+
+        &__title {
+            font-size: 35px;
+            text-align: center;
+        }
+
+        &__desc {
+            font-size: 14px;
+           text-align: center;
+        }
+
+        &__subtitle {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-top: 40px;
+
+            &-header {
+                font-size: 16px;
+
+                &:last-child {
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        &__wrapper {
+            margin-top: 40px !important;
+        }
+
+        &__card {
+            min-height: 316px !important;
+
+            &-num-1 {
+                margin-top: 0;
+            }
+
+            &-img {
+                height: 244px;
+            }
+            &-body {
+                height: 112px;
+
+                h3 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
