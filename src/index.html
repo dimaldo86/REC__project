@@ -392,15 +392,15 @@
                 <div class="row">
                    <div class="col-md-12">
                         <div class="object__subtitle">
-                            <div class="object__subtitle-header">Промышленные объекты</div>
-                            <div class="object__subtitle-header">Гражданские объекты</div>
+                            <div class="object__subtitle-header" data-tab="industrial">Промышленные объекты</div>
+                            <div class="object__subtitle-header" data-tab="civilian">Гражданские объекты</div>
                         </div>
                    </div>
                 </div> <!--row-->
 
                 <div class="row mt-5 object__wrapper">
                     <div class="col-lg-4 col-md-6">
-                       <div class="object__card object__card-num-1">
+                       <div class="object__card object__card-num-1" data-tab="civilian">
                            <div class="object__card-img">
                                <img src="./img/object/object-1.jpg" alt="Офисные здания">
                            </div>
@@ -410,7 +410,7 @@
                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                         <div class="object__card object__card-num-2">
+                         <div class="object__card object__card-num-2" data-tab="industrial">
                            <div class="object__card-img">
                                <img src="./img/object/object-2.jpg" alt="Логистические Комплексы">
                            </div>
@@ -420,7 +420,7 @@
                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 ">
-                         <div class="object__card object__card-num-3">
+                         <div class="object__card object__card-num-3" data-tab="civilian">
                            <div class="object__card-img">
                                <img src="./img/object/object-3.jpg" alt="ТРЦ">
                            </div>
@@ -430,7 +430,7 @@
                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
-                         <div class="object__card">
+                         <div class="object__card" data-tab="civilian">
                            <div class="object__card-img">
                                <img src="./img/object/object-4.jpg" alt="Водоподготовка">
                            </div>
@@ -439,7 +439,7 @@
                            </div>
                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
+                    <div class="col-lg-4 col-md-6 mt-lg-5 mt-4" data-tab="industrial">
                          <div class="object__card">
                            <div class="object__card-img">
                                <img src="./img/object/object-5.jpg" alt="Заводы пищевой промышленности">
@@ -449,7 +449,7 @@
                            </div>
                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
+                    <div class="col-lg-4 col-md-6 mt-lg-5 mt-4" data-tab="industrial">
                          <div class="object__card">
                            <div class="object__card-img">
                                <img src="./img/object/object-2.jpg" alt="Логистические Комплексы">
@@ -474,6 +474,181 @@
             </div> <!--container-->
         </section>
 <!--object end-->  
+<!--portfolio start-->
+<section class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="portfolio__title">Наши работы</h2>
+                <p class="portfolio__desc">Мы находим инженерные и проектные решения, которые помогают развитию проекта, устраняют преграды и помогают стать на путь к успеху в реализации проекта.  </p>
+            </div>
+        </div> <!--row-->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="portfolio__list">
+                    <ul class="portfolio__list-header">
+                        <li class="portfolio__list-title active" data-tab="#tab1">Объекты Промышленности</li>
+                        <li class="portfolio__list-title" data-tab="#tab2">ЭНЕРГЕТИКА</li>
+                        <li class="portfolio__list-title" data-tab="#tab3">ВОЗОБНОВЛЯЕМАЯ ЭНЕРГЕТИКА</li>
+                        <li class="portfolio__list-title" data-tab="#tab4">ОБЪЕКТЫ КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ</li>
+                        <li class="portfolio__list-title" data-tab="#tab5">Объекты инженерной инфраструктуры</li>
+                    </ul>
+                    <div class="portfolio__list-wrapper"> 
+                        <div id="tab1" class="portfolio__list-content active" data-title="Объекты Промышленности">
+                            <div class="portfolio__list-item">
+                               <p class="portfolio__list-desc">Котельные на газе</p>
+                               <p class="portfolio__list-count">78 <span>объекта(-ов)</span></p>
+                            </div>
+                            <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельные на МВТ</p>
+                                <p class="portfolio__list-count">49<span>объекта(-ов)</span></p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельные (дизельное/печное топливо)</p>
+                                <p class="portfolio__list-count">6 <span>объекта(-ов)</span></p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельное (термомасло)</p>
+                                <p class="portfolio__list-count">15<span>объекта(-ов)</span></p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Мини-ТЭЦ (ГПА)</p>
+                                <p class="portfolio__list-count">4<span>объекта(-ов)</span</p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельные (дизельное/печное топливо)</p>
+                                <p class="portfolio__list-count">47<span>объекта(-ов)</span</p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельное (термомасло)</p>
+                                <p class="portfolio__list-count">10<span>объекта(-ов)</span</p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Мини-ТЭЦ (ГПА)</p>
+                                <p class="portfolio__list-count">17<span>объекта(-ов)</span</p>
+                             </div>
+                        </div>
+    
+                        <div id="tab2" class="portfolio__list-content" data-title="ЭНЕРГЕТИКА">
+                            <div class="portfolio__list-item">
+                               <p class="portfolio__list-desc">Котельные на газе</p>
+                               <p class="portfolio__list-count">78 <span>объекта(-ов)</span></p>
+                            </div>
+                            <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельные на МВТ</p>
+                                <p class="portfolio__list-count">49<span>объекта(-ов)</span></p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельные (дизельное/печное топливо)</p>
+                                <p class="portfolio__list-count">6 <span>объекта(-ов)</span></p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельное (термомасло)</p>
+                                <p class="portfolio__list-count">15<span>объекта(-ов)</span></p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Мини-ТЭЦ (ГПА)</p>
+                                <p class="portfolio__list-count">4<span>объекта(-ов)</span</p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельные (дизельное/печное топливо)</p>
+                                <p class="portfolio__list-count">47<span>объекта(-ов)</span</p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельное (термомасло)</p>
+                                <p class="portfolio__list-count">10<span>объекта(-ов)</span</p>
+                             </div>
+                        </div>
+    
+                        <div id="tab3" class="portfolio__list-content" data-title="ВОЗОБНОВЛЯЕМАЯ ЭНЕРГЕТИКА">
+                            <div class="portfolio__list-item">
+                               <p class="portfolio__list-desc">Котельные на газе</p>
+                               <p class="portfolio__list-count">78 <span>объекта(-ов)</span></p>
+                            </div>
+                            <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельные на МВТ</p>
+                                <p class="portfolio__list-count">49<span>объекта(-ов)</span></p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельные (дизельное/печное топливо)</p>
+                                <p class="portfolio__list-count">6 <span>объекта(-ов)</span></p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельное (термомасло)</p>
+                                <p class="portfolio__list-count">15<span>объекта(-ов)</span></p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Мини-ТЭЦ (ГПА)</p>
+                                <p class="portfolio__list-count">4<span>объекта(-ов)</span</p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельное (термомасло)</p>
+                                <p class="portfolio__list-count">10<span>объекта(-ов)</span</p>
+                             </div>
+                           
+                        </div>
+    
+                        <div id="tab4" class="portfolio__list-content" data-title="ОБЪЕКТЫ КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ">
+                            <div class="portfolio__list-item">
+                               <p class="portfolio__list-desc">Котельные на газе</p>
+                               <p class="portfolio__list-count">78 <span>объекта(-ов)</span></p>
+                            </div>
+                            <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельные на МВТ</p>
+                                <p class="portfolio__list-count">49<span>объекта(-ов)</span></p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельные (дизельное/печное топливо)</p>
+                                <p class="portfolio__list-count">6 <span>объекта(-ов)</span></p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельное (термомасло)</p>
+                                <p class="portfolio__list-count">15<span>объекта(-ов)</span></p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Мини-ТЭЦ (ГПА)</p>
+                                <p class="portfolio__list-count">4<span>объекта(-ов)</span</p>
+                             </div>
+                        </div>
+    
+                        <div id="tab5" class="portfolio__list-content" data-title="Объекты инженерной инфраструктуры">
+                            <div class="portfolio__list-item">
+                               <p class="portfolio__list-desc">Котельные на газе</p>
+                               <p class="portfolio__list-count">78 <span>объекта(-ов)</span></p>
+                            </div>
+                            <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельные на МВТ</p>
+                                <p class="portfolio__list-count">49<span>объекта(-ов)</span></p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельные (дизельное/печное топливо)</p>
+                                <p class="portfolio__list-count">6 <span>объекта(-ов)</span></p>
+                             </div>
+                             <div class="portfolio__list-item">
+                                <p class="portfolio__list-desc">Котельное (термомасло)</p>
+                                <p class="portfolio__list-count">15<span>объекта(-ов)</span></p>
+                             </div>
+                        </div>
+                    </div> 
+                </div> <!--portfolio__list-->
+            </div>
+        </div> <!--row-->
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="divider">
+                  <div class="divider__wrapper">
+                    <i class="bi bi-arrow-right"></i>
+                    <a href="#" class="divider__wrapper-link">ВСЕ  работы</a>
+                  </div>
+                </div>
+            </div>
+        </div> <!--row-->
+    </div> <!--container-->
+</section>
+<!--portfolio end-->
+
 
 
     </main>
