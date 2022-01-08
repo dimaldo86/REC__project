@@ -16,6 +16,7 @@ const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const { extendDefaultPlugins } = require("svgo");
 
 
+
 // какой режим 
 //npm i cross-env --save-dev
 const isDev = process.env.NODE_ENV === 'development';

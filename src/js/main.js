@@ -9,6 +9,8 @@ import tabs from './modules/tabs';
 
 
 
+
+
 window.addEventListener('DOMContentLoaded', () => {
 
     langChange('.top__flag');
@@ -26,5 +28,6 @@ window.addEventListener('DOMContentLoaded', () => {
     popup();
 
     tabs('.portfolio__list-title', '.portfolio__list-content', 'active');
+
 
 });
