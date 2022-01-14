@@ -48,7 +48,7 @@
          .nav-item {
           display: flex;
           width: 100%;
-          min-height: 64px;
+          height: 20%;
           align-items: center;
           margin-bottom: 0px;
           border-bottom: 1px solid $table-color;
@@ -66,7 +66,7 @@
           display: flex;
           align-items: center;
           width: 100%;
-          min-height: 64px;
+          height: 100%;
           border: none;
           border-top-left-radius: 0px;
           border-top-right-radius: 0px;
@@ -94,6 +94,7 @@
           padding: 15px 20px 8px 28px;
           width: 100%; 
           min-height: 322px;
+          transition: all .4s ease-in-out;
         }
 
         .card-boby {
@@ -140,31 +141,7 @@
         height: 100%;
       }
     }
-
-    // @media (max-width:1120px) {
-    //       .portfolio {
-    //           &__tab {
-    //               min-height: 524px;
-    //           }
-    //       }
-    //   }
-      @media (max-width:991px) {
-          .portfolio {
-              padding: 80px 0; 
-          }
-      }
-      
-      @media (max-width: 767px) {
-          .portfolio { 
-            .portfolio-tab .tab-content .card-boby-desc {
-              width:90%
-            }
-            &-tab .tab-content .card-boby-count span {
-              display: none;
-            }
-          } 
-        }
-   
+  }
     @media(min-width:576px) {
       .portfolio {
         &-tab {
@@ -172,6 +149,7 @@
             display: flex;
             flex-direction: column;
             width: 50%;
+            min-height: 322px;
           }
 
           .card {
@@ -189,10 +167,30 @@
         }
       }
     }
+  @media (max-width:991px) {
+          .portfolio {
+              padding: 80px 0; 
+
+              &-tab .tab-content .card-boby-count span {
+                display: none;
+              }
+          }
+      }
+      
+  @media (max-width: 767px) {
+          .portfolio { 
+            .portfolio-tab .tab-content .card-boby-desc {
+              width:90%
+            }
+
+            &__desc {
+              width:100%;
+            }
+      
+          } 
+        }
     
-   
-    
-    @media(max-width:575px){
+@media(max-width:575px){
 
       .portfolio {
         padding: 40px 0;
@@ -202,7 +200,9 @@
             text-align: center;
         }
         &__desc {
+            width:70%;
             font-size: 14px;
+            margin: 0 auto;
             text-align: center;
         }
         &-tab  {
@@ -217,12 +217,12 @@
           .card-header {
             display: flex;
             align-items: center;
+            background:$white-color;
             border-top-left-radius: 0px;
             border-top-right-radius: 0px;
             min-height: 64px;
             padding: 0 24px;
             transition: all .4s ease-in-out;
-            border:none;
 
             &:hover {
               background: $primary-color;
@@ -248,6 +248,8 @@
                   color: $white-color;
                 }
               }
+
+              
             }
             
         }
@@ -261,4 +263,3 @@
       }
     
     }
-  }
