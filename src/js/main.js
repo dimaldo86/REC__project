@@ -25,10 +25,10 @@ window.addEventListener('DOMContentLoaded', () => {
     menuBurger();
 
     scrollHeader();
-    
+
     popup();
 
     tabs('.portfolio__list-title', '.portfolio__list-content', 'active');
 
-    splide();
+    splide;
 });
