@@ -1,0 +1,49 @@
+.contact {
+    min-height: 643px;
+    padding: 235px 0 35px;
+
+    &__title {
+        @include title-section;
+    }
+
+    &__desc {
+        margin-top: 40px;
+
+        p {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 160%;
+            color: $dark-text;
+        }
+
+        &-low {
+            margin-top: 27px;
+        }
+    }
+
+    &__bg {
+        display: flex;
+        position: absolute;
+        bottom: -20.2%;
+        left: 0;
+        z-index: -1;
+        max-width:1040px;
+        width: calc(580px + (1040 - 580) * ((100vw - 1040px) / (1440 - 500)));
+        height: 290px;
+        background:$primary-color;
+    }
+
+}
+
+@media (max-width:991px) {
+    .contact {
+        padding-top: 40px;
+
+        &__bg {
+            width: 100%;
+
+            bottom:0;
+        }
+    }
+}
+

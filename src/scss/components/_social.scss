@@ -1,0 +1,52 @@
+.social {
+    display: flex;
+    align-items: center;
+    margin-top: 57px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:71px;
+        height: 71px;
+        border: 1px solid $social-border;
+        border-radius: 50%;
+        margin-right: 24px;
+        cursor: pointer;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .viber, .wattsapp, .telegram {
+        transition: all .4s ease-out;
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
+
+    .viber {
+        &:hover {
+            box-shadow: 0 -2px 30px 0 #665CAC;
+        }
+    }
+
+    .wattsapp {
+        &:hover {
+            box-shadow: 0 -2px 30px 0 #43d854;
+        }
+    }
+
+    .telegram {
+        &:hover {
+            box-shadow: 0 -2px 30px 0 #0088cc;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .social {
+        justify-content: center;
+    }
+}

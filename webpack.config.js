@@ -10,14 +10,16 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const TerserPlugin = require("terser-webpack-plugin");
 // npm install css-minimizer-webpack-plugin --save-dev
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-//npm install image-minimizer-webpack-plugin --save-dev, npm install imagemin-gifsicle imagemin-jpegtran imagemin-optipng imagemin-svgo --save-dev - без потерь 
+//npm install image-minimizer-webpack-plugin --save-dev, npm install imagemin-gifsicle imagemin-jpegtran imagemin-optipng imagemin-svgo --save-dev - без потерь
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 // svg
 const { extendDefaultPlugins } = require("svgo");
 
+// const babel = require('babel-polyfill');
 
 
-// какой режим 
+
+// какой режим
 //npm i cross-env --save-dev
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
@@ -30,14 +32,14 @@ const optimization = () => {
         chunks: 'all'
       }
     };
-  
+
     if (isProd) {
       configObj.minimizer = [
         new CssMinimizerPlugin(),
         new TerserPlugin()
       ];
     }
-  
+
     return configObj;
   };
 
@@ -50,17 +52,17 @@ const optimization = () => {
               collapseWhitespace: isProd
             }
         }),
-        new CssMinimizerPlugin(), 
+        new CssMinimizerPlugin(),
         new TerserPlugin(),
         new MiniCssExtractPlugin({
         filename: `./css/${filename('css')}`
         }),
         new CopyWebpackPlugin({
             patterns: [
-            {from: path.resolve(__dirname, 'src/assets') , 
+            {from: path.resolve(__dirname, 'src/assets') ,
             to: path.resolve(__dirname, 'dist')}
             ]
-        }),  
+        }),
       ];
 
       if(isProd) {
@@ -126,7 +128,7 @@ module.exports = {
     },
     plugins: plugins(),
     devtool: isProd ? false : 'source-map', // изпользуем в dev
-    
+
     module: {
         rules: [
             /** Babel **/
@@ -145,7 +147,7 @@ module.exports = {
             {
                 test: /\.html$/,
                 loader: 'html-loader',
-         
+
                 // npm install --save-dev html-loader
               },
 
@@ -163,7 +165,7 @@ module.exports = {
                   'css-loader'
                 ],
             },
-            
+
             /** SCSS/SAAS */
             {
                 test: /\.s[ac]ss$/,
@@ -179,7 +181,7 @@ module.exports = {
                   'css-loader',
                   'sass-loader'
                 ],
-                // npm i style-loader css-loader sass sass-loader -D  
+                // npm i style-loader css-loader sass sass-loader -D
                 // npm install node-sass
             },
             {
@@ -237,11 +239,11 @@ module.exports = {
             {
                 test: /\.xml$/i,
                 use: ['xml-loader'],
-                // npm i xml-loader -D 
+                // npm i xml-loader -D
             },
         ],
     },
 
     optimization: optimization()
-  
+
 };
