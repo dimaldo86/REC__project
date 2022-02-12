@@ -29,7 +29,7 @@
         left: 0;
         z-index: 1;
         max-width:1040px;
-        width: calc(650px + (1040 - 580) * ((100vw - 1040px) / (1440 - 600)));
+        width: calc(592px + (1040 - 592) * ((100vw - 1040px) / (1440 - 575)));
         height: 290px;
         background:$primary-color;
     }
@@ -41,10 +41,10 @@
         padding: 40px 0 0 0;
 
         &__bg {
-            width: 110%;
+            width: 100vw;
             height: 246px;
             bottom:0;
-            left: -5%;
+            left: -12px;
         }
     }
 }
