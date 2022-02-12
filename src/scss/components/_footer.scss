@@ -1,0 +1,195 @@
+.footer {
+    min-height: 404px;
+    padding: 104px 0;
+    background-color:$dark-text;
+    z-index: -1;
+
+    &__top, &__bottom  {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__top {
+        height: 102px;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width:250px;
+
+        &-link {
+            transition: all .3s ease-in-out;
+
+            &:hover {
+               opacity: 0.6;
+            }
+        }
+    }
+
+    &__license {
+        margin-top: 30px;
+        text-decoration: none;
+        color: $white-color;
+        opacity: 0.4;
+        font-size: 16px;
+        line-height: 1.6;
+        transition: all .4s ease-in-out;
+
+        &:hover {
+            text-decoration: none;
+            color:$white-color;
+            opacity: 1;
+        }
+    }
+
+    &__menu-left, &__menu-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    &__item {
+        list-style: none;
+        margin-bottom: 15px;
+        transition: all 0.3s linear;
+
+        &:hover {
+            transform: translateX(9px);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            letter-spacing: 0.1px;
+            color: $white-color;
+            opacity: 0.75;
+            transition: all 0.3s linear;
+
+            &:hover {
+                text-decoration: none;
+                color:$secondary-color;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 102px;
+
+
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        transition: all .4s ease-in;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: 16px;
+            color: $white-color;
+            opacity: 0.75;
+            margin-bottom: 0;
+            margin-left: 12px;
+            transition: all .4s ease-in;
+
+            &:hover {
+                transform: translateX(9px)
+            }
+        }
+    }
+
+    &__bottom {
+        margin-top: 90px;
+    }
+
+   &__desc {
+        font-size: 16px;
+        color: $white-color;
+        opacity: 0.4;
+    }
+
+    &__dev {
+        transition: all .4s ease-in-out;
+
+        &:hover {
+            transform: translateY(-3px);
+            background-color: $secondary-color;
+            border-radius: 8px;
+            box-shadow: 19px 19px 11px -5px rgba(79, 16, 11, 0.6);
+        }
+        a {
+            font-size: 18px;
+            color: $white-color;
+            opacity: 0.4;
+            transition: all .4s ease-in-out;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+                color:$white-color;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .footer {
+        padding: 74px 0 150px;
+
+        &__top {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 60px;
+        }
+
+        &__logo {
+            order: 1;
+        }
+
+        &__bottom {
+            margin-top: 260px;
+        }
+    }
+}
+
+@media (max-width:640px) {
+    .footer {
+        padding: 58px 0 74px;
+        display: flex;
+        flex-direction: column;
+
+        &__top {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            row-gap: 40px;
+        }
+
+        &__bottom {
+            margin-top: 490px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__dev {
+            margin-top: 40px;
+        }
+    }
+}

@@ -231,7 +231,7 @@
                             <div class="service__subtitle-header">Строительство</div>
                         </div>
                     </div>
-                </div> row
+                </div> <!--row-->
 
                 <div class="row row-mt">
                     <div class="col-lg-3 col-md-6">
@@ -863,43 +863,108 @@
 
                     </div> <!--col-lg-5-->
 
-                   <div class="col-lg-7">
+                    <div class="col-lg-6 offset-lg-1">
+                        <form action="#" class="form" method="post">
 
-                        <div class="col-lg-6 offset-lg-1">
-                            <form action="#" class="form" method="post">
+                            <div class="form__input">
+                                <input class="form__name" type="text" name="name" placeholder="Ваше имя" required>
+                                <label class="form__label" for="name">*</label>
+                            </div>
 
-                                <div class="form__input">
-                                    <input class="form__name" type="text" name="name" placeholder="Ваше имя" required>
-                                    <label class="form__label" for="name">*</label>
-                                </div>
+                                <select class="form__select">
+                                    <option value="Предпочтительный способ связи" selected>Предпочтительный способ связи</option>
+                                    <option value="Звонок по телефону">Звонок по телефону</option>
+                                    <option value="Email">Email</option>
+                                    <option value="Мессенджеры">Мессенджеры</option>
+                                </select>
 
-                                    <select class="form__select">
-                                        <option value="Предпочтительный способ связи" selected>Предпочтительный способ связи</option>
-                                        <option value="Звонок по телефону">Звонок по телефону</option>
-                                        <option value="Email">Email</option>
-                                        <option value="Мессенджеры">Мессенджеры</option>
-                                    </select>
+                            <input type="text" placeholder="Компания">
+                            <textarea class="form__msg" name="msg" placeholder="Сообщение..." ></textarea>
 
-                                <input type="text" placeholder="Компания">
-                                <textarea class="form__msg" name="msg" placeholder="Сообщение..." ></textarea>
-
-                                <button class="form__btn" type="submit">
-                                    <i class="bi bi-arrow-right"></i>
-                                    СВЯЗАТЬСЯ
-                                </button>
-                            </form>
-                        </div> <!--col-lg-6-->
-
-                        <div class="contact__bg"></div>
-
-                   </div> <!--col-lg-7-->
-
+                            <button class="form__btn" type="submit">
+                                <i class="bi bi-arrow-right"></i>
+                                СВЯЗАТЬСЯ
+                            </button>
+                        </form>
+                    </div> <!--col-lg-6-->
                 </div> <!--row-->
+
+                <div class="row">
+                    <div class="col-lg-7 offset-lg-5">
+                        <div class="contact__bg"></div>
+                   </div> <!--col-lg-7-->
+                </div>
                </div> <!--container-->
             </section>
 <!--contact end-->
     </main>
 <!--main end-->
+<!--footer start-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <a href="#" class="footer__logo-link">
+                        <img src="./img/footer/logo.png" alt="REC">
+                    </a>
+                    <a href="#" class="footer__license">
+                        Зарегестрировано, 24.06.2014 <br />
+                        № 193322040
+                    </a>
+                </div> <!--footer__logo-->
+
+                <ul class="footer__menu-left">
+                    <li class="footer__item">
+                        <a href="#">О компании</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Услуги</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Портфолио</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__menu-right">
+                    <li class="footer__item">
+                        <a href="#">Команда</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Блог</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/" class="footer__link" target="_blank">
+                        <img src="./img/footer/instargam.png" alt="Instagram">
+                        <p>Instagram</p>
+                    </a>
+
+                    <a href="https://ru-ru.facebook.com/" class="footer__link" target="_blank">
+                        <img src="./img/footer/facebook.png" alt="Facebook">
+                        <p>Facebook</p>
+                    </a>
+
+                    <a href="https://twitter.com/Twitter" class="footer__link" target="_blank">
+                        <img src="./img/footer/Twitter.png" alt="Twitter">
+                        <p>Twitter</p>
+                    </a>
+                </div>
+            </div> <!--footer__top-->
+
+            <div class="footer__bottom">
+                <div class="footer__desc">2021  Росинжконсалт © Все права защищены.</div>
+                <div class="footer__dev">
+                    <a href="#">Dmitry Menshikov</a>
+                </div>
+            </div>
+        </div> <!--container-->
+    </footer>
+<!--footer end-->
+
 <!--popup start-->
     <div class="popup">
             <div class="container">

@@ -1,6 +1,7 @@
 .contact {
     min-height: 643px;
     padding: 235px 0 35px;
+    position: relative;
 
     &__title {
         @include title-section;
@@ -24,11 +25,11 @@
     &__bg {
         display: flex;
         position: absolute;
-        bottom: -20.2%;
+        bottom: -109px;
         left: 0;
-        z-index: -1;
+        z-index: 1;
         max-width:1040px;
-        width: calc(580px + (1040 - 580) * ((100vw - 1040px) / (1440 - 500)));
+        width: calc(650px + (1040 - 580) * ((100vw - 1040px) / (1440 - 600)));
         height: 290px;
         background:$primary-color;
     }
@@ -37,12 +38,13 @@
 
 @media (max-width:991px) {
     .contact {
-        padding-top: 40px;
+        padding: 40px 0 0 0;
 
         &__bg {
-            width: 100%;
-
+            width: 110%;
+            height: 246px;
             bottom:0;
+            left: -5%;
         }
     }
 }
