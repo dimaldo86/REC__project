@@ -7,7 +7,8 @@ import popup from './modules/popup';
 import tabs from './modules/tabs';
 import splide from './modules/splide';
 import forms from './modules/forms';
-import checkTextInputs from './modules/checkTextInputs'
+import checkTextInputs from './modules/checkTextInputs';
+import activeMenu from './modules/activeMenu';
 
 
 
@@ -38,4 +39,6 @@ window.addEventListener('DOMContentLoaded', () => {
     checkTextInputs('[name="msg"]');
 
     forms();
+
+    activeMenu();
 });

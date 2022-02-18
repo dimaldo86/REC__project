@@ -1,5 +1,6 @@
 
 import './index.html';
+import './about.html';
 // подключение стилей
 import './scss/style.scss';
 import './js/main';
