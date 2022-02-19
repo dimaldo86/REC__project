@@ -1,0 +1,39 @@
+.copyright {
+    padding: 80px 0 40px;
+
+    &__title {
+        @include title-section;
+    }
+
+    &__desc {
+        margin-top: 40px;
+
+        p {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 160%;
+            color: $dark-text;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .copyright {
+        padding: 60px 0 0;
+    }
+}
+
+
+@media (max-width:575px) {
+    .copyright {
+        &__desc {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
