@@ -9,10 +9,8 @@
         margin-top: 40px;
 
         p {
-            font-weight: 300;
-            font-size: 18px;
-            line-height: 160%;
-            color: $dark-text;
+           @include text;
+           margin-bottom: 30px;
 
             &:last-child {
                 margin-bottom: 0;

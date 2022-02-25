@@ -1,0 +1,137 @@
+.acceptance {
+    position: relative;
+    min-height: 1002px;
+    padding: 48px 0 200px;
+
+    &__title {
+        @include title-section;
+    }
+
+    &__desc {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+
+        p {
+            @include text;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 244px;
+        height: 48px;
+        background:$secondary-color;
+        border: none;
+        color:$white-color;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: 40px;
+        transition: all .4s ease-in-out;
+
+        &:hover {
+            background:$hover-color;
+            color:$white-color;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        margin-top: 76px;
+        padding-left: 0;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        &-num {
+            font-family: Roboto Slab;
+            font-weight: normal;
+            font-size: 55px;
+            color: $blue-text;
+            margin-bottom: 13px;
+            border-bottom: 1px solid $blue-text;
+        }
+
+        &-text {
+            @include text;
+            color:$blue-text;
+        }
+    }
+
+    &__block {
+        position: absolute;
+        right:5.5%;
+        top: -6.5%;
+        width: 690px;
+        height: 126px;
+        background: $primary-color;
+
+        &-red {
+            position: absolute;
+            width: 213px;
+            height: 13px;
+            bottom: 11%;
+            right: 8%;
+            background: $secondary-color;
+            transform: rotate(90deg);
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .acceptance {
+        padding: 48px 0 80px;
+    }
+}
+
+@media (max-width:767px) {
+    .acceptance {
+       &__list {
+           display: flex;
+           justify-content: space-between;
+           align-items: flex-start;
+       }
+
+       &__item {
+           max-width: 128px;
+           &-num {
+               text-align: center;
+           }
+
+           &-text {
+               text-align: center;
+           }
+       }
+    }
+}
+
+@media (max-width:575px) {
+    .acceptance {
+        padding: 0;
+
+        &__list {
+            margin-top: 40px;
+        }
+        &__item {
+            max-width: 90px;
+            &-num {
+               font-size: 36px;
+            }
+
+            &-text {
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+
+        &__btn {
+            width: 100%;
+        }
+    }
+}

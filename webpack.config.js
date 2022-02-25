@@ -58,7 +58,14 @@ const optimization = () => {
           minify: {
             collapseWhitespace: isProd
           }
-      }),
+        }),
+        new HtmlWebpackPlugin({
+          template: path.resolve(__dirname, 'src/team.html'),
+          filename: 'team.html',
+          minify: {
+            collapseWhitespace: isProd
+          }
+        }),
         new CssMinimizerPlugin(),
         new TerserPlugin(),
         new MiniCssExtractPlugin({

@@ -52,6 +52,27 @@
         }
     }
 
+    .dropdown-toggle {
+        margin-bottom: 5px;
+
+        &::after {
+            display: none;
+        }
+    }
+
+
+    .dropdown-menu {
+        border: none;
+        border-radius: 0;
+        min-width: 9rem;
+        border: 1px solid $primary-color;
+    }
+
+    .dropdown-item {
+        padding-left: 3px;
+    }
+
+
     &__link {
         text-decoration: none;
         color: $blue-text;

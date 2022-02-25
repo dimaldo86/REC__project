@@ -85,7 +85,10 @@
                                 <a href="#" class="menu__link active-link">Главная</a>
                             </li>
                             <li class="menu__item">
-                                <a href="about.html" class="menu__link">О компании</a>
+                                <a id="navbarDropdown" href="about.html" class="menu__link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">О компании</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class=" menu__link dropdown-item" href="team.html">Команда</a></li>
+                                  </ul>
                                 <svg class="menu__item-arrow  bottom__arrow" viewBox="0 0 5 9">
                                     <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
                                 </svg>

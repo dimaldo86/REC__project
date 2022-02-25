@@ -11,12 +11,8 @@
         margin-top: 115px;
 
         p {
-            font-weight: 300;
-            font-size: 18px;
-            line-height: 160%;
-            color: $dark-text;
+            @include text;
             text-align: justify;
-            margin-bottom: 0;
         }
     }
 
@@ -213,18 +209,6 @@
     .about {
        padding-top: 0;
 
-
-        &__title {
-            font-size: 35px;
-            text-align: center;
-        }
-
-        &__desc {
-            p {
-                font-size: 16px;
-            }
-        }
-
         &__stat {
             display: flex;
             flex-direction: column;
@@ -276,6 +260,4 @@
             margin-left: 0;
         }
     }
-
-
 }

@@ -64,10 +64,7 @@
         padding: 0 50px;
 
         p {
-            font-weight: 300;
-            font-size: 18px;
-            line-height: 160%;
-            color:$dark-text;
+           @include text;
             margin-bottom: 30px;
 
             &:last-child {
@@ -128,12 +125,6 @@
 
         &__left {
             justify-content: center;
-        }
-
-        &__desc {
-            p {
-                font-size: 16px;
-            }
         }
     }
 }
