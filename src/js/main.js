@@ -12,9 +12,6 @@ import activeMenu from './modules/activeMenu';
 
 
 
-
-
-
 window.addEventListener('DOMContentLoaded', () => {
 
     langChange('.top__flag');

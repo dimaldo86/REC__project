@@ -1,9 +1,11 @@
 .top__menu {
     padding-top: 248px;
+    background:$bg-color;
 
     .breadcrumb {
-        background-color: $white-color;
+        background-color: $bg-color;
         align-items:center;
+        margin-bottom: 0;
 
         &-item {
             a {
@@ -16,7 +18,7 @@
 
                 &:hover {
                     border-bottom:1.5px solid $secondary-color;
-                    
+
                 }
             }
 

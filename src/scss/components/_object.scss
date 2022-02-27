@@ -1,6 +1,6 @@
 .object {
-    min-height: 1184px;
-    padding: 80px 0;
+    min-height: 502px;
+    padding: 150px 0;
     position: relative;
 
     &__title {
@@ -60,7 +60,7 @@
                 }
 
             }
-            
+
             &::before {
                 content:'';
                 position: absolute;
@@ -77,7 +77,7 @@
             //    opacity: 1;
             // }
         }
-       
+
     }
 
 
@@ -90,7 +90,7 @@
         justify-content: flex-start;
         width: 100%;
         min-height: 346px;
-        
+
         // &.active {
         //     display:flex;
         // }
@@ -157,7 +157,7 @@
 
         &__desc {
             width:100%;
-           
+
         }
 
        &__card {
