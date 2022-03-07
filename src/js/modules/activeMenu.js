@@ -5,7 +5,6 @@ const activeMenu = (menuSelector) => {
 
 
     menuItems.forEach(item => {
-        console.log(item);
         item.addEventListener('click', () => {
             const url = document.location.href;
             console.log(url);

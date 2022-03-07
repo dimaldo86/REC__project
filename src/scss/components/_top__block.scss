@@ -1,0 +1,46 @@
+.top__block {
+    position: absolute;
+    right:0;
+    top: 22%;
+    width: 690px;
+    height: 126px;
+    background: url(../img/bg-blue-block/bg-block.png) no-repeat;
+    z-index: 2;
+
+    &-red {
+        position: absolute;
+        width: 213px;
+        height: 13px;
+        bottom: 11%;
+        right: 8%;
+        background: $secondary-color;
+        transform: rotate(90deg);
+    }
+}
+
+@media (max-width:1200px) {
+       .top__block {
+           width: 490px;
+           right:0;
+       }
+
+}
+
+
+@media (max-width:991px) {
+        .top__block {
+            width: 420px;
+            top:-5.5%;
+
+            &-red {
+                width: 190px;
+                bottom:19.5%;
+            }
+        }
+}
+
+@media (max-width:767px) {
+    .top__block {
+        display: none;
+    }
+}

@@ -3,7 +3,7 @@ const path = require('path');
 //npm install html-webpack-plugin -D
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 //npm install --save-dev mini-css-extract-plugin
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // npm install copy-webpack-plugin --save-dev
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 // npm install terser-webpack-plugin --save-dev
@@ -69,6 +69,13 @@ const optimization = () => {
         new HtmlWebpackPlugin({
           template: path.resolve(__dirname, 'src/blog.html'),
           filename: 'blog.html',
+          minify: {
+            collapseWhitespace: isProd
+          }
+        }),
+        new HtmlWebpackPlugin({
+          template: path.resolve(__dirname, 'src/portfolio.html'),
+          filename: 'portfolio.html',
           minify: {
             collapseWhitespace: isProd
           }
@@ -178,13 +185,16 @@ module.exports = {
                 test: /\.css$/i,
                 use: [
                   {
-                    loader: MiniCssExtractPlugin.loader,
-                    options: {
-                      hmr: isDev
-                    },
+                      loader: MiniCssExtractPlugin.loader,
+                      options: {
+                          hmr: isDev,
+                          reloadAll: true
+                      },
                   },
-                  'css-loader'
-                ],
+                  "style-loader",
+                  "css-loader",
+                  "sass-loader",
+              ],
             },
 
             /** SCSS/SAAS */

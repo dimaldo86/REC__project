@@ -5,11 +5,10 @@ import menuBurger from './modules/menuBurger';
 import scrollHeader from './modules/scrollHeader';
 import popup from './modules/popup';
 import tabs from './modules/tabs';
-import splide from './modules/splide';
 import forms from './modules/forms';
 import checkTextInputs from './modules/checkTextInputs';
 import activeMenu from './modules/activeMenu';
-
+import swiper from './modules/swiper';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -30,7 +29,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     tabs('.portfolio__list-title', '.portfolio__list-content', 'active');
 
-    splide;
 
     checkTextInputs('[name="name"]');
     checkTextInputs('[name="msg"]');
@@ -38,4 +36,5 @@ window.addEventListener('DOMContentLoaded', () => {
     forms();
 
     activeMenu();
+    swiper;
 });

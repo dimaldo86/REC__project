@@ -12,7 +12,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Команда</title>
 </head>
-<body>
+<body data-barba="wrapper">
 <!-- header start  -->
     <div class="overlay"></div>
     <header class="header">
@@ -177,7 +177,7 @@
                                 </svg>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Наши работы</a>
+                                <a href="portfolio.html" class="menu__link">Наши работы</a>
                             </li>
                             <li class="menu__item">
                                 <a href="blog.html" class="menu__link">Блог</a>
@@ -198,11 +198,11 @@
     </header>
 <!--header end-->
 <!--main start-->
-    <main>
+    <main data-barba="container" data-barba-namespace="home">
 <!--top__menu start-->
         <div class="top__menu">
             <div class="container">
-                <nav aria-label="breadcrumb">
+                <nav aria-label="breadcrumb" class="w-50">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="./">Главная</a></li>
                         <li class="breadcrumb-item" aria-current="page"><a href="about.html">О Компании</a></li>
@@ -212,14 +212,14 @@
             </div>
         </div>
 <!--top__menu end-->
+<!--top__block start-->
+        <div class="top__block col-md-6 offset-6">
+            <div class="top__block-red"></div>
+        </div>
+<!--top__block end-->
 <!--acceptance start-->
         <section class="acceptance">
             <div class="container">
-                <div class="row">
-                    <div class="acceptance__block">
-                        <div class="acceptance__block-red"></div>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-md-9">
                         <h2 class="acceptance__title">
