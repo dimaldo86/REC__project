@@ -8,7 +8,7 @@
 
     .swiper {
         margin-top: 75px;
-        height:auto;
+        min-height:350px;
         width: 100%;
 
         &-slide {
@@ -28,11 +28,26 @@
               }
         }
         &-pagination {
-            background-color: aqua;
-            width: 150px;
-            height: 20px;
+           bottom: 0;
+           span {
+                width: 13px;
+                height: 13px;
+                width: 12.71px;
+           }
+           &-bullet {
+               background:$primary-color;
+               opacity: 1;
+
+               &-active {
+                   background:$secondary-color;
+               }
+           }
         }
 
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap,8px);
     }
 }
 

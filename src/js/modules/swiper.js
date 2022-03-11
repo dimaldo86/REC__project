@@ -1,5 +1,6 @@
 
-import Swiper from 'swiper';
+ import Swiper from 'swiper/bundle';
+
 
 const swiper = new Swiper(".my-swiper", {
     slidesPerView: "auto",

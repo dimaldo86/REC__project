@@ -26,16 +26,11 @@
     margin: 0 auto;
 
     @media (max-width: 991px) {
-      max-width: 960px;
       padding: 0 24px;
     }
 
-    @media (max-width: 767px) {
-      max-width: 720px;
-    }
 
     @media (max-width: 575px) {
-      max-width: 540px;
       padding: 0 15px;
     }
   }

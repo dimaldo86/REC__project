@@ -83,7 +83,8 @@ const optimization = () => {
         new CssMinimizerPlugin(),
         new TerserPlugin(),
         new MiniCssExtractPlugin({
-        filename: `./css/${filename('css')}`
+        filename: `./css/${filename('css')}`,
+        // filename: `./scss/${filename('css')}`,
         }),
         new CopyWebpackPlugin({
             patterns: [
@@ -188,13 +189,18 @@ module.exports = {
                       loader: MiniCssExtractPlugin.loader,
                       options: {
                           hmr: isDev,
-                          reloadAll: true
+                          reloadAll: true,
+                          esModule: false,
+                          emit:false,
+                          publicPath: (resourcePath, context) => {
+                            return path.relative(path.dirname(resourcePath), context) + "/";
                       },
                   },
+                },
                   "style-loader",
                   "css-loader",
-                  "sass-loader",
-              ],
+                  "sass-loader"
+                ],
             },
 
             /** SCSS/SAAS */
@@ -204,6 +210,10 @@ module.exports = {
                   {
                     loader: MiniCssExtractPlugin.loader,
                     options: {
+                      // hmr: isDev,
+                      // reloadAll: true,
+                      // esModule: false,
+                      // emit:false,
                       publicPath: (resourcePath, context) => {
                         return path.relative(path.dirname(resourcePath), context) + '/';
                       },
