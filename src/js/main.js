@@ -8,7 +8,8 @@ import tabs from './modules/tabs';
 import forms from './modules/forms';
 import checkTextInputs from './modules/checkTextInputs';
 import activeMenu from './modules/activeMenu';
-import swiper from './modules/swiper';
+import { swiper, swiperGalery } from './modules/swiper';
+import showCard from './modules/showCard';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -25,7 +26,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     scrollHeader();
 
-    popup();
+    popup('.popup__wrapper', '.benefit__item-circle', '.popup__close', '.popup__overlay');
+
+    popup('.popup__wrapper', '.map__item-tag', '.popup__close', '.popup__overlay');
 
     tabs('.portfolio__list-title', '.portfolio__list-content', 'active');
 
@@ -37,4 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     activeMenu();
     swiper;
+    swiperGalery;
+
+    showCard('.gallery__item.hidden', '.gallery__btn');
 });

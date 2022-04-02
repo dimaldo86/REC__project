@@ -80,6 +80,13 @@ const optimization = () => {
             collapseWhitespace: isProd
           }
         }),
+        new HtmlWebpackPlugin({
+          template: path.resolve(__dirname, 'src/portfolio__link.html'),
+          filename: 'portfolio__link.html',
+          minify: {
+            collapseWhitespace: isProd
+          }
+        }),
         new CssMinimizerPlugin(),
         new TerserPlugin(),
         new MiniCssExtractPlugin({

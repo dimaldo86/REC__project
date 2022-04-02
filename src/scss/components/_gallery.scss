@@ -1,0 +1,219 @@
+.gallery {
+    padding: 80px 0 95px;
+    height: auto;
+
+    &__top {
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+
+    h2 {
+        @include title-section;
+    }
+
+    .bi {
+        color:$secondary-color;
+        font-size: 36px;
+        cursor: pointer;
+        height: 100%;
+    }
+
+    .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+        font-weight: 600 !important;
+    }
+    .swiper {
+        padding: 0 10px;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after {
+        display: none;
+    }
+
+    .swiper-button-disabled {
+        color:$placeholder;
+    }
+
+    .slider__item {
+        position: relative;
+        width: 100%;
+        height: 470px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:flex-start;
+        text-decoration: none;
+        transition: all .9s ease-in-out;
+        margin: 40px 0 0;
+        opacity: 1;
+        visibility: visible;
+
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: 6px -3px 11px 6px rgba(34, 60, 80, 0.2);
+            text-decoration: none;
+            border-radius: 8px;
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 350px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            &:hover {
+                border-radius: 8px 8px 0 0;
+            }
+        }
+    }
+
+    &__title {
+        position: absolute;
+        right: 0;
+        top: 303px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 222px;
+        height: 64px;
+        background: $blue-text;
+        color: $white-color;
+        font-weight: 600;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    &__desc {
+        width: 80%;
+        margin: 32px 0 0;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 160%;
+        color: $dark-text;
+    }
+
+    &__btn {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 350px;
+        height: 48px;
+        margin: 45px auto;
+        outline:2px solid $secondary-color;
+        background:$white-color;
+        color:$secondary-color;
+        border: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 16px;
+        transition: all .8s ease-in;
+
+        &:hover {
+            background:$secondary-color;
+            color: $white-color;
+            outline: none;
+        }
+    }
+
+     button:focus:not(:focus-visible) {
+        outline:2px solid $secondary-color;
+    }
+}
+
+@media (max-width:991px) {
+    .gallery {
+        padding: 40px 0 0;
+
+        &__btn {
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .gallery {
+        .slider__item {
+            width: 100%;
+        }
+
+        &__btn {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:686px) {
+    .gallery {
+        .slider__item {
+            height: 460px;
+            margin-top: 20px;
+        }
+        &__img {
+            height: 270px;
+        }
+
+        &__title {
+            position: static;
+            width: 100%;
+        }
+
+        &__desc {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (max-width:575px) {
+    .gallery {
+        padding-top: 0;
+
+        &__top {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 12px 0;
+        }
+        .col-sm-6 {
+            width: 50%;
+
+            &:nth-child(odd) {
+                padding-right: 5px;
+            }
+
+            &:nth-child(even) {
+                padding-left: 0;
+            }
+
+        }
+        .swiper {
+            padding: 0 15px;
+        }
+        .slider__item {
+            height: 100%;
+            margin-top: 5px;
+        }
+
+        &__img {
+            max-height: 180px;
+            height: 144px;
+        }
+
+        &__desc , &__title{
+            font-size: 12px;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__desc {
+            width: 100%;
+        }
+    }
+}

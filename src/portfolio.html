@@ -10,10 +10,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
 
     <title>Наши работы</title>
 </head>
 <body>
+    <div class="overlay"></div>
 <!-- header start  -->
     <div class="overlay"></div>
     <header class="header">
@@ -203,7 +206,7 @@
 <!--top__menu start-->
         <div class="top__menu">
             <div class="container">
-                <nav aria-label="breadcrumb" class="w-50">
+                <nav aria-label="breadcrumb" class="w-sm-50">
                     <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="./">Главная</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Наши работы</li>
@@ -303,6 +306,477 @@
             </div> <!--container-->
         </section>
 <!--jobs end-->
+<!--gallery start-->
+        <div class="gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <a href="#" class="gallery__item">
+                            <div class="gallery__img">
+                                <img src="./img/gallery/gallery-1.jpg" alt="ОДО «Энека-Инжиниринг»">
+                            </div>
+                            <h3 class="gallery__title">
+                                ОДО «Энека-Инжиниринг»
+                            </h3>
+                            <p class="gallery__desc">
+                                Строительство котельной Минского производственного комплекса УП «Белцветмет»
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <a href="./portfolio__link.html" class="gallery__item">
+                            <div class="gallery__img">
+                                <img src="./img/gallery/gallery-2.jpg" alt="LITANA">
+                            </div>
+                            <h3 class="gallery__title">
+                                LITANA
+                            </h3>
+                            <p class="gallery__desc">
+                                Реконструкция котельной по
+                                ул. Гагарина, 156
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <a href="#" class="gallery__item">
+                            <div class="gallery__img">
+                                <img src="./img/gallery/gallery-3.jpg" alt=VARABYEU PARTNERS>
+                            </div>
+                            <h3 class="gallery__title">
+                                VARABYEU PARTNERS
+                            </h3>
+                            <p class="gallery__desc">
+                                Водогрейная котельная с сетями инженерно-технического обеспечения по адресу: Архангельская область, Плесецкий район
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <a href="#" class="gallery__item">
+                            <div class="gallery__img">
+                                <img src="./img/gallery/gallery-4.jpg" alt="ОДО «Высокий Замок»">
+                            </div>
+                            <h3 class="gallery__title">
+                                ОДО «Высокий Замок»
+                            </h3>
+                            <p class="gallery__desc">
+                                Строительство водогрейной котельной на природном газе и МВТ на территории ОАО «Слуцкий завод
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <a href="#" class="gallery__item">
+                            <div class="gallery__img">
+                                <img src="./img/gallery/gallery-5.jpg" alt="BIM SOLUTIONS">
+                            </div>
+                            <h3 class="gallery__title">
+                                BIM SOLUTIONS
+                            </h3>
+                            <p class="gallery__desc">
+                                Хладоцентр Яндекс, 1-я очередь
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <a href="#" class="gallery__item">
+                            <div class="gallery__img">
+                                <img src="./img/gallery/gallery-6.jpg" alt="VARABYEU PARTNERS">
+                            </div>
+                            <h3 class="gallery__title">
+                                VARABYEU PARTNERS
+                            </h3>
+                            <p class="gallery__desc">
+                                Строительство газовой котельной для технологических нужд
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <a href="#" class="gallery__item hidden">
+                            <div class="gallery__img">
+                                <img src="./img/gallery/gallery-7.jpg" alt="ОДО «Энека-Инжиниринг»">
+                            </div>
+                            <h3 class="gallery__title">
+                                ОДО «Энека-Инжиниринг»
+                            </h3>
+                            <p class="gallery__desc">
+                                Теплохладоцентр (водогрейной котельной и газоиспользующих абсорбционных холодильных машин) для ФНС России
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <a href="#" class="gallery__item hidden">
+                            <div class="gallery__img">
+                                <img src="./img/gallery/gallery-8.jpg" alt="LITANA">
+                            </div>
+                            <h3 class="gallery__title">
+                                LITANA
+                            </h3>
+                            <p class="gallery__desc">
+                                Реконструкция котельной по ул. Ивана Романова, 3а
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <a href="#" class="gallery__item hidden">
+                            <div class="gallery__img">
+                                <img src="./img/gallery/gallery-9.png" alt="BIM SOLUTIONS">
+                            </div>
+                            <h3 class="gallery__title">
+                                BIM SOLUTIONS
+                            </h3>
+                            <p class="gallery__desc">
+                                Водогрейная котельная с сетями инженерно-технического обеспечения по адресу: Архангельская область, Плесецкий район
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <a href="#" class="gallery__item hidden">
+                            <div class="gallery__img">
+                                <img src="./img/gallery/gallery-9.png" alt="BIM SOLUTIONS">
+                            </div>
+                            <h3 class="gallery__title">
+                                BIM SOLUTIONS
+                            </h3>
+                            <p class="gallery__desc">
+                                Водогрейная котельная с сетями инженерно-технического обеспечения по адресу: Архангельская область, Плесецкий район
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <a href="#" class="gallery__item hidden">
+                            <div class="gallery__img">
+                                <img src="./img/gallery/gallery-9.png" alt="BIM SOLUTIONS">
+                            </div>
+                            <h3 class="gallery__title">
+                                BIM SOLUTIONS
+                            </h3>
+                            <p class="gallery__desc">
+                                Водогрейная котельная с сетями инженерно-технического обеспечения по адресу: Архангельская область, Плесецкий район
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <a href="#" class="gallery__item hidden">
+                            <div class="gallery__img">
+                                <img src="./img/gallery/gallery-9.png" alt="BIM SOLUTIONS">
+                            </div>
+                            <h3 class="gallery__title">
+                                BIM SOLUTIONS
+                            </h3>
+                            <p class="gallery__desc">
+                                Водогрейная котельная с сетями инженерно-технического обеспечения по адресу: Архангельская область, Плесецкий район
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="gallery__btn">ПОКАЗАТЬ БОЛЬШЕ</button>
+                    </div>
+                </div> <!--row-->
+            </div> <!--container-->
+        </div> <!--gallery-->
+<!--gallery end-->
+<!--map start-->
+        <section class="map">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="map__title">На карте :</h3>
+                    </div>
+                </div> <!--row1-->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="map__bg">
+                            <div class="map__wrap">
+                                <div class="map__item">
+
+                                    <div class="map__item-tag tag-1">
+                                        <div class="map__tooltip">
+                                            <div class="map__tooltip-wrap pe-3">
+                                                <p class="map__tooltip-thin">
+                                                    Строительство котельной в составе котла с теплоносителем термомасло для работы производственного цеха предприятия УП "СТиМ"
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                            </div>
+
+                                            <div class="ps-5">
+                                                <p class="map__tooltip-black">
+                                                    Строительство котельной в составе котла с теплоносителем термомасло для работы производственного цеха предприятия УП "СТиМ"
+                                                </p>
+                                                <p class="map__tooltip-desc-thin">
+                                                    Беларусь, территория свободно экономической зоны "Брест"
+
+                                                    <span>УП «СТиМ»</span>
+                                                </p>
+                                                <a class="map__tooltip-link" href="#">Посмотреть проект</a>
+                                            </div>
+                                        </div>
+                                        <p class="map__item-num">2</p>
+                                    </div>
+                                    <div class="map__item-tag tag-2">
+                                        <div class="map__tooltip">
+                                            <div class="map__tooltip-wrap pe-3">
+                                                <p class="map__tooltip-thin">
+                                                    Строительство котельной в составе котла с теплоносителем термомасло для работы производственного цеха предприятия УП "СТиМ"
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                            </div>
+
+                                            <div class="ps-5">
+                                                <p class="map__tooltip-black">
+                                                    Строительство котельной в составе котла с теплоносителем термомасло для работы производственного цеха предприятия УП "СТиМ"
+                                                </p>
+                                                <p class="map__tooltip-desc-thin">
+                                                    Беларусь, территория свободно экономической зоны "Брест"
+
+                                                    <span>УП «СТиМ»</span>
+                                                </p>
+                                                <a class="map__tooltip-link" href="#">Посмотреть проект</a>
+                                            </div>
+                                        </div>
+                                        <p class="map__item-num">4</p>
+                                    </div>
+                                    <div class="map__item-tag tag-3">
+                                        <div class="map__tooltip">
+                                            <div class="map__tooltip-wrap pe-3">
+                                                <p class="map__tooltip-thin">
+                                                    Строительство котельной в составе котла с теплоносителем термомасло для работы производственного цеха предприятия УП "СТиМ"
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                            </div>
+
+                                            <div class="ps-5">
+                                                <p class="map__tooltip-black">
+                                                    Строительство котельной в составе котла с теплоносителем термомасло для работы производственного цеха предприятия УП "СТиМ"
+                                                </p>
+                                                <p class="map__tooltip-desc-thin">
+                                                    Беларусь, территория свободно экономической зоны "Брест"
+
+                                                    <span>УП «СТиМ»</span>
+                                                </p>
+                                                <a class="map__tooltip-link" href="#">Посмотреть проект</a>
+                                            </div>
+                                        </div>
+                                        <p class="map__item-num">12</p>
+                                    </div>
+                                    <div class="map__item-tag tag-4">
+                                        <div class="map__tooltip">
+                                            <div class="map__tooltip-wrap pe-3">
+                                                <p class="map__tooltip-thin">
+                                                    Строительство котельной в составе котла с теплоносителем термомасло для работы производственного цеха предприятия УП "СТиМ"
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                            </div>
+
+                                            <div class="ps-5">
+                                                <p class="map__tooltip-black">
+                                                    Строительство котельной в составе котла с теплоносителем термомасло для работы производственного цеха предприятия УП "СТиМ"
+                                                </p>
+                                                <p class="map__tooltip-desc-thin">
+                                                    Беларусь, территория свободно экономической зоны "Брест"
+
+                                                    <span>УП «СТиМ»</span>
+                                                </p>
+                                                <a class="map__tooltip-link" href="#">Посмотреть проект</a>
+                                            </div>
+                                        </div>
+                                        <p class="map__item-num">21</p>
+                                    </div>
+                                    <div class="map__item-tag tag-5">
+                                        <div class="map__tooltip">
+                                            <div class="map__tooltip-wrap pe-3">
+                                                <p class="map__tooltip-thin">
+                                                    Строительство котельной в составе котла с теплоносителем термомасло для работы производственного цеха предприятия УП "СТиМ"
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                            </div>
+
+                                            <div class="ps-5">
+                                                <p class="map__tooltip-black">
+                                                    Строительство котельной в составе котла с теплоносителем термомасло для работы производственного цеха предприятия УП "СТиМ"
+                                                </p>
+                                                <p class="map__tooltip-desc-thin">
+                                                    Беларусь, территория свободно экономической зоны "Брест"
+
+                                                    <span>УП «СТиМ»</span>
+                                                </p>
+                                                <a class="map__tooltip-link" href="#">Посмотреть проект</a>
+                                            </div>
+                                        </div>
+                                        <p class="map__item-num">7</p>
+                                    </div>
+                                    <div class="map__item-tag tag-6">
+                                        <div class="map__tooltip">
+                                            <div class="map__tooltip-wrap pe-3">
+                                                <p class="map__tooltip-thin">
+                                                    Строительство котельной в составе котла с теплоносителем термомасло для работы производственного цеха предприятия УП "СТиМ"
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                            </div>
+
+                                            <div class="ps-5">
+                                                <p class="map__tooltip-black">
+                                                    Строительство котельной в составе котла с теплоносителем термомасло для работы производственного цеха предприятия УП "СТиМ"
+                                                </p>
+                                                <p class="map__tooltip-desc-thin">
+                                                    Беларусь, территория свободно экономической зоны "Брест"
+
+                                                    <span>УП «СТиМ»</span>
+                                                </p>
+                                                <a class="map__tooltip-link" href="#">Посмотреть проект</a>
+                                            </div>
+                                        </div>
+                                        <p class="map__item-num">5</p>
+                                    </div>
+                                    <div class="map__item-tag tag-7">
+                                        <div class="map__tooltip">
+                                            <div class="map__tooltip-wrap pe-3">
+                                                <p class="map__tooltip-thin">
+                                                    Строительство котельной в составе котла с теплоносителем термомасло для работы производственного цеха предприятия УП "СТиМ"
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                            </div>
+
+                                            <div class="ps-5">
+                                                <p class="map__tooltip-black">
+                                                    Строительство котельной в составе котла с теплоносителем термомасло для работы производственного цеха предприятия УП "СТиМ"
+                                                </p>
+                                                <p class="map__tooltip-desc-thin">
+                                                    Беларусь, территория свободно экономической зоны "Брест"
+
+                                                    <span>УП «СТиМ»</span>
+                                                </p>
+                                                <a class="map__tooltip-link" href="#">Посмотреть проект</a>
+                                            </div>
+                                        </div>
+                                        <p class="map__item-num">4</p>
+                                    </div>
+                                    <div class="map__item-tag tag-8">
+                                        <div class="map__tooltip">
+                                            <div class="map__tooltip-wrap pe-3">
+                                                <p class="map__tooltip-thin">
+                                                    Строительство котельной в составе котла с теплоносителем термомасло для работы производственного цеха предприятия УП "СТиМ"
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                            </div>
+
+                                            <div class="ps-5">
+                                                <p class="map__tooltip-black">
+                                                    Строительство котельной в составе котла с теплоносителем термомасло для работы производственного цеха предприятия УП "СТиМ"
+                                                </p>
+                                                <p class="map__tooltip-desc-thin">
+                                                    Беларусь, территория свободно экономической зоны "Брест"
+
+                                                    <span>УП «СТиМ»</span>
+                                                </p>
+                                                <a class="map__tooltip-link" href="#">Посмотреть проект</a>
+                                            </div>
+                                        </div>
+                                        <p class="map__item-num">8</p>
+                                    </div>
+                                    <div class="map__item-tag tag-9">
+                                        <div class="map__tooltip">
+                                            <div class="map__tooltip-wrap pe-3">
+                                                <p class="map__tooltip-thin">
+                                                    Строительство котельной в составе котла с теплоносителем термомасло для работы производственного цеха предприятия УП "СТиМ"
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                                <p class="map__tooltip-blue">
+                                                    Завод по производству сосновой живицы и эфиров канифоли в г. Бресте, Беларусь
+                                                </p>
+                                            </div>
+
+                                            <div class="ps-5">
+                                                <p class="map__tooltip-black">
+                                                    Строительство котельной в составе котла с теплоносителем термомасло для работы производственного цеха предприятия УП "СТиМ"
+                                                </p>
+                                                <p class="map__tooltip-desc-thin">
+                                                    Беларусь, территория свободно экономической зоны "Брест"
+
+                                                    <span>УП «СТиМ»</span>
+                                                </p>
+                                                <a class="map__tooltip-link" href="#">Посмотреть проект</a>
+                                            </div>
+                                        </div>
+                                        <p class="map__item-num">18</p>
+                                    </div>
+
+                                </div> <!--map__item-->
+                            </div> <!--map__wrap-->
+                        </div> <!--map__bg-->
+                    </div>
+                </div> <!--row2-->
+            </div> <!--container-->
+        </section>
+<!--map end-->
 <!--contact start-->
         <section class="contact">
             <div class="container">
@@ -433,5 +907,28 @@
         </div> <!--container-->
     </footer>
 <!--footer end-->
+
+<!--popup start-->
+<div class="popup">
+    <div class="container">
+        <div class="popup__wrapper">
+
+            <div class="popup__header">
+                <span class="popup__close">&times;</span>
+                <img src="./img/benefit/benefit-hover.jpg" alt="Мы работаем" >
+            </div>
+            <div class="popup__content">
+                <p class="popup__content-body">Услуга сбора технических условий для строительства не является уникальной на рынке. Вместе с тем, не следует поручать ее оказание случайным людям, предлагающим самую низкую цену. Специалисты компании «Росинжконсалт» еще до получения технических условий анализируют</p>
+                <a class="map__tooltip-link mt-2" href="#">Посмотреть проект</a>
+            </div>  <!--popup__content-->
+
+        </div>   <!--popup__wrapper-->
+
+        <div class="popup__overlay"></div>
+
+    </div> <!--container-->
+</div> <!--popup-->
+<!--popup end-->
+
 </body>
 </html>

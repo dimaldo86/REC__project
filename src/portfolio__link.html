@@ -10,7 +10,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <title>Блог</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
+
+    <title>Наши работы</title>
 </head>
 <body>
 <!-- header start  -->
@@ -177,10 +180,10 @@
                                 </svg>
                             </li>
                             <li class="menu__item">
-                                <a href="portfolio.html" class="menu__link">Наши работы</a>
+                                <a href="#" class="menu__link active-link">Наши работы</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link active-link">Блог</a>
+                                <a href="blog.html" class="menu__link">Блог</a>
                             </li>
                             <li class="menu__item">
                                 <a href="#" class="menu__link">Контакты</a>
@@ -197,141 +200,165 @@
             </div> <!--row-->
     </header>
 <!--header end-->
-<!--main start-->
+<!--main start  -->
     <main>
 <!--top__menu start-->
-    <div class="top__menu">
-        <div class="container">
-            <nav aria-label="breadcrumb" class="w-sm-50">
-                <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="./">Главная</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Блог</li>
-                </ol>
-            </nav>
+        <div class="top__menu">
+            <div class="container">
+                <nav aria-label="breadcrumb" class="w-sm-50">
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="./portfolio.html">Наши работы</a></li>
+                    </ol>
+                </nav>
+            </div>
         </div>
-    </div>
 <!--top__menu end-->
-<!--blog start-->
-    <section class="blog">
-       <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="blog__title">Блог</h2>
-                </div>
-            </div> <!--row-->
+<!--top__block start-->
+        <div class="top__block col-md-6 offset-6">
+            <div class="top__block-red"></div>
+        </div>
+<!--top__block end-->
+<!--gallery start-->
+        <section class="gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="gallery__top col-12">
+                        <h2>Еще проекты</h2>
+                        <div class="gallery__arrow">
+                            <i class="bi bi-arrow-left me-4"></i>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                    </div>
+                </div> <!--row1-->
+                <div class="row">
+                    <div class="swiper my__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="gallery__item slider__item">
+                                    <div class="gallery__img">
+                                        <img src="./img/gallery/gallery-1.jpg" alt="ОДО «Энека-Инжиниринг»">
+                                    </div>
+                                    <h3 class="gallery__title">
+                                        ОДО «Энека-Инжиниринг»
+                                    </h3>
+                                    <p class="gallery__desc">
+                                        Строительство котельной Минского производственного комплекса УП «Белцветмет»
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="gallery__item slider__item">
+                                    <div class="gallery__img">
+                                        <img src="./img/gallery/gallery-2.jpg" alt="LITANA">
+                                    </div>
+                                    <h3 class="gallery__title">
+                                        LITANA
+                                    </h3>
+                                    <p class="gallery__desc">
+                                        Реконструкция котельной по
+                                        ул. Гагарина, 156
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="gallery__item slider__item">
+                                    <div class="gallery__img">
+                                        <img src="./img/gallery/gallery-3.jpg" alt=VARABYEU PARTNERS>
+                                    </div>
+                                    <h3 class="gallery__title">
+                                        VARABYEU PARTNERS
+                                    </h3>
+                                    <p class="gallery__desc">
+                                        Водогрейная котельная с сетями инженерно-технического обеспечения по адресу: Архангельская область, Плесецкий район
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="gallery__item slider__item">
+                                    <div class="gallery__img">
+                                        <img src="./img/gallery/gallery-4.jpg" alt="ОДО «Высокий Замок»">
+                                    </div>
+                                    <h3 class="gallery__title">
+                                        ОДО «Высокий Замок»
+                                    </h3>
+                                    <p class="gallery__desc">
+                                        Строительство водогрейной котельной на природном газе и МВТ на территории ОАО «Слуцкий завод
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="gallery__item slider__item">
+                                    <div class="gallery__img">
+                                        <img src="./img/gallery/gallery-4.jpg" alt="ОДО «Высокий Замок»">
+                                    </div>
+                                    <h3 class="gallery__title">
+                                        ОДО «Высокий Замок»
+                                    </h3>
+                                    <p class="gallery__desc">
+                                        Строительство водогрейной котельной на природном газе и МВТ на территории ОАО «Слуцкий завод
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="gallery__item slider__item">
+                                    <div class="gallery__img">
+                                        <img src="./img/gallery/gallery-6.jpg" alt="VARABYEU PARTNERS">
+                                    </div>
+                                    <h3 class="gallery__title">
+                                        VARABYEU PARTNERS
+                                    </h3>
+                                    <p class="gallery__desc">
+                                        Строительство газовой котельной для технологических нужд
+                                    </p>
+                                </a>
+                            </div>
 
-            <div class="row">
-                <div class="col-lg-4 col-md-6 blog__wrap">
-                    <a href="#" class="blog__card">
-                        <div class="blog__card-img">
-                            <img src="./img/blog/blog-1.jpg" alt="Blog">
+                            <div class="swiper-slide">
+                                <a href="#" class="gallery__item slider__item">
+                                    <div class="gallery__img">
+                                        <img src="./img/gallery/gallery-4.jpg" alt="ОДО «Высокий Замок»">
+                                    </div>
+                                    <h3 class="gallery__title">
+                                        ОДО «Высокий Замок»
+                                    </h3>
+                                    <p class="gallery__desc">
+                                        Строительство водогрейной котельной на природном газе и МВТ на территории ОАО «Слуцкий завод
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="gallery__item slider__item">
+                                    <div class="gallery__img">
+                                        <img src="./img/gallery/gallery-4.jpg" alt="ОДО «Высокий Замок»">
+                                    </div>
+                                    <h3 class="gallery__title">
+                                        ОДО «Высокий Замок»
+                                    </h3>
+                                    <p class="gallery__desc">
+                                        Строительство водогрейной котельной на природном газе и МВТ на территории ОАО «Слуцкий завод
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="gallery__item slider__item">
+                                    <div class="gallery__img">
+                                        <img src="./img/gallery/gallery-6.jpg" alt="VARABYEU PARTNERS">
+                                    </div>
+                                    <h3 class="gallery__title">
+                                        VARABYEU PARTNERS
+                                    </h3>
+                                    <p class="gallery__desc">
+                                        Строительство газовой котельной для технологических нужд
+                                    </p>
+                                </a>
+                            </div>
                         </div>
-                        <div class="blog__card-desc">
-                            <div class="blog__card-date">Фев. 26, 2021</div>
-                            <h3 class="blog__card-title">Мониторинг строительства ТЭЦ в городе Советская Гавань</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 blog__wrap">
-                    <a href="#" class="blog__card">
-                        <div class="blog__card-img">
-                            <img src="./img/blog/blog-2.jpg" alt="Blog">
-                        </div>
-                        <div class="blog__card-desc">
-                            <div class="blog__card-date">Фев. 26, 2021</div>
-                            <h3 class="blog__card-title">Строительный аудит и мониторинг Кочубеевской ВЭС</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 blog__wrap">
-                    <a href="#" class="blog__card">
-                        <div class="blog__card-img">
-                            <img src="./img/blog/blog-3.jpg" alt="Blog">
-                        </div>
-                        <div class="blog__card-desc">
-                            <div class="blog__card-date">Фев. 26, 2021</div>
-                            <h3 class="blog__card-title">Аудит солнечной электростанции во Вьетнаме</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 blog__wrap">
-                    <a href="#" class="blog__card">
-                        <div class="blog__card-img">
-                            <img src="./img/blog/blog-4.jpg" alt="Blog">
-                        </div>
-                        <div class="blog__card-desc">
-                            <div class="blog__card-date">Фев. 26, 2021</div>
-                            <h3 class="blog__card-title">Предпроектная проработка для Азотного комплекса АО «Апатит»</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 blog__wrap">
-                    <a href="#" class="blog__card">
-                        <div class="blog__card-img">
-                            <img src="./img/blog/blog-5.jpg" alt="Blog">
-                        </div>
-                        <div class="blog__card-desc">
-                            <div class="blog__card-date">Фев. 26, 2021</div>
-                            <h3 class="blog__card-title">Проведение публичного технологического и ценового аудита аэропортового комплекса</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 blog__wrap">
-                    <a href="#" class="blog__card">
-                        <div class="blog__card-img">
-                            <img src="./img/blog/blog-6.jpg" alt="Blog">
-                        </div>
-                        <div class="blog__card-desc">
-                            <div class="blog__card-date">Фев. 26, 2021</div>
-                            <h3 class="blog__card-title">Финансово-технический надзор по проекту строительства жилого комплекса «Волгарь» г. Самара</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 blog__wrap">
-                    <a href="#" class="blog__card">
-                        <div class="blog__card-img">
-                            <img src="./img/blog/blog-7.jpg" alt="Blog">
-                        </div>
-                        <div class="blog__card-desc">
-                            <div class="blog__card-date">Фев. 26, 2021</div>
-                            <h3 class="blog__card-title">Ввод в эксплуатацию Нижне-Бурейской ГЭС</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 blog__wrap">
-                    <a href="#" class="blog__card">
-                        <div class="blog__card-img">
-                            <img src="./img/blog/blog-8.jpg" alt="Blog">
-                        </div>
-                        <div class="blog__card-desc">
-                            <div class="blog__card-date">Фев. 26, 2021</div>
-                            <h3 class="blog__card-title">Пуск в эксплуатацию и синхронизация гидроагрегата №5 Усть-Хантайской ГЭС</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 blog__wrap">
-                    <a href="#" class="blog__card">
-                        <div class="blog__card-img">
-                            <img src="./img/blog/blog-9.jpg" alt="Blog">
-                        </div>
-                        <div class="blog__card-desc">
-                            <div class="blog__card-date">Фев. 26, 2021</div>
-                            <h3 class="blog__card-title">Открытие завода «Русская треска» в Мурманске</h3>
-                        </div>
-                    </a>
-                </div>
-            </div> <!--row-->
-
-            <nav aria-label="pagination">
-                <ul class="pagination">
-                  <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                </ul>
-              </nav>
-       </div> <!--container-->
-    </section>
-<!--blog end-->
+                    </div>
+                </div> <!--row2-->
+            </div> <!--container-->
+        </section> <!--gallery-->
+<!--gallery end-->
     </main>
 <!--main end-->
 <!--footer start-->
@@ -399,5 +426,6 @@
         </div> <!--container-->
     </footer>
 <!--footer end-->
+
 </body>
 </html>
