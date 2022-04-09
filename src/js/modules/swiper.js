@@ -21,7 +21,7 @@ const swiper = new Swiper(".my-swiper", {
         slidesPerView: 2,
         spaceBetween: 20
       },
-      // when window width is >= 480px
+      // when window width is >= 950px
       950: {
         slidesPerView: 3,
         spaceBetween: 30
@@ -36,11 +36,22 @@ const swiper = new Swiper(".my-swiper", {
   const swiper3 = new Swiper(".description__swiper", {
 
     spaceBetween: 16,
-    slidesPerView: 5,
+    slidesPerView:3,
     watchSlidesProgress: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      569: {
+        slidesPerView: 5,
+      },
+      767: {
+        slidesPerView: 7,
+      },
+      997: {
+        slidesPerView: 5,
+      }
     }
   });
   const swiper2 = new Swiper(".description__swiper2", {
