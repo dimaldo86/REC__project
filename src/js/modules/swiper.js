@@ -33,4 +33,22 @@ const swiper = new Swiper(".my-swiper", {
     },
   });
 
-  export  { swiper, swiperGalery };
+  const swiper3 = new Swiper(".description__swiper", {
+
+    spaceBetween: 16,
+    slidesPerView: 5,
+    watchSlidesProgress: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }
+  });
+  const swiper2 = new Swiper(".description__swiper2", {
+    loop: true,
+    spaceBetween: 10,
+    thumbs: {
+      swiper: swiper3,
+    },
+  });
+
+  export  { swiper, swiperGalery, swiper2, swiper3 };

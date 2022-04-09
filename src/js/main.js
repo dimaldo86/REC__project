@@ -8,7 +8,7 @@ import tabs from './modules/tabs';
 import forms from './modules/forms';
 import checkTextInputs from './modules/checkTextInputs';
 import activeMenu from './modules/activeMenu';
-import { swiper, swiperGalery } from './modules/swiper';
+import { swiper, swiperGalery, swiper2, swiper3 } from './modules/swiper';
 import showCard from './modules/showCard';
 
 
@@ -41,6 +41,8 @@ window.addEventListener('DOMContentLoaded', () => {
     activeMenu();
     swiper;
     swiperGalery;
+    swiper2;
+    swiper3;
 
     showCard('.gallery__item.hidden', '.gallery__btn');
 });
