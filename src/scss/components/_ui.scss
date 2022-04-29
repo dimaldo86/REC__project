@@ -17,7 +17,7 @@
 @import './social';
 @import './form';
 @import './footer';
-@import './topMenu';
+@import '../ui/topMenu';
 @import './mission';
 @import './copyright';
 @import './problem';
@@ -25,8 +25,10 @@
 @import './list';
 @import './blog';
 @import './pagination';
-@import './top__block';
+@import '../ui/top__block';
 @import './jobs';
 @import './gallery';
 @import './map';
 @import './description';
+@import './team-page/team';
+@import '../ui/stat';

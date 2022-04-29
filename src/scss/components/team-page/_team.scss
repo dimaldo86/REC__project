@@ -1,0 +1,244 @@
+.team {
+    min-height: 1070px;
+
+    &__title {
+        z-index: 1;
+
+        h2 {
+            @include title-section;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        margin-top: -13%;
+    }
+
+    &__gr-photo {
+        width: 100%;
+        height: auto;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+
+    &__ind-photo {
+        display: none;
+    }
+
+    &__blur {
+        position: absolute;
+        width: 20%;
+        height: 75%;
+        bottom: 0;
+        left: 0;
+
+        &:hover {
+            cursor: pointer;
+
+            .team__desc {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+
+        &-one {
+            left: 4%;
+        }
+        &-two {
+            left: 25%;
+        }
+        &-three {
+            left: 47%;
+        }
+        &-four{
+            left: 65%;
+        }
+
+    }
+
+    &__desc {
+        position: absolute;
+        width: 325px;
+        height: 177px;
+        padding: 32px 80px 0 32px;
+        background:$primary-color;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.08);
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s ease-in-out;
+
+        &-one {
+            top:55%;
+            left: 0;
+        }
+
+        &-two {
+            top:55%;
+            left: 5%;
+        }
+
+        &-three {
+            top:55%;
+            left: 13%;
+        }
+
+        &-four {
+            top:55%;
+            left: 10%;
+        }
+
+        &-name {
+            font-family: 'Roboto Slab';
+            font-weight: 400;
+            font-size: 23px;
+            color: $white-color;
+        }
+
+        &-job {
+            display: block;
+            margin-top: 8px;
+            font-family: 'Commissioner';
+            font-weight: 300;
+            font-size: 18px;
+            color: $white-color;
+        }
+    }
+
+    &__stat {
+        margin: 60px 0;
+    }
+
+     &__text {
+         p {
+             font-weight: 300;
+             font-size: 18px;
+             line-height: 160%;
+             color: $dark-text;
+         }
+    }
+
+}
+
+@media(max-width:1200px) {
+    .team {
+        &__desc {
+            width: 285px;
+            height: 157px;
+            padding: 22px 50px 0 22px;
+        }
+    }
+}
+
+@media(min-width:768px) and(max-width:991px) {
+    .team {
+        &__desc {
+            width: 225px;
+            height: 127px;
+            padding: 15px 30px 0 15px;
+
+            &-name {
+                font-size: 18px;
+            }
+
+            &-job {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media(max-width:767px) {
+    .team {
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        &__blur {
+            &:hover {
+                cursor:default;
+
+                .team__desc {
+                   display: none;
+                }
+            }
+        }
+        &__gr-photo {
+            display: none;
+        }
+        &__ind-photo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 645px;
+            margin-top: 25%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+
+       &__entry {
+            width: 100%;
+            padding: 32px 90px 50px 32px;
+            background: $primary-color;
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.08);
+
+            span {
+                display: block;
+                color:$white-color;
+            }
+
+            &-name {
+                font-family: 'Roboto Slab';
+                font-weight: 400;
+                font-size: 18px;
+            }
+
+            &-job {
+                margin-top: 16px;
+                font-weight: 300;
+                font-size: 16px;
+            }
+       }
+
+       &__stat {
+        margin-top: 90px;
+    }
+    }
+}
+
+@media(max-width:575px) {
+    .team {
+        &__ind-photo {
+            margin-top: 35%;
+        }
+
+        &__stat {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media(max-width:425px) {
+    .team {
+        &__ind-photo {
+            margin-top: 48%;
+        }
+    }
+}
+
+

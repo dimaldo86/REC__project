@@ -86,15 +86,18 @@
         flex-direction: column;
         justify-content: center;
         width: 102px;
-
-
     }
 
     &__link {
         display: flex;
         align-items: center;
         margin-bottom: 15px;
+        text-decoration: none;
         transition: all .4s ease-in;
+
+        &:hover {
+            text-decoration: none;
+        }
 
         &:last-child {
             margin-bottom: 0;

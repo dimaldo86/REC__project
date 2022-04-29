@@ -60,8 +60,8 @@ const optimization = () => {
           }
         }),
         new HtmlWebpackPlugin({
-          template: path.resolve(__dirname, 'src/team.html'),
-          filename: 'team.html',
+          template: path.resolve(__dirname, 'src/service.html'),
+          filename: 'service.html',
           minify: {
             collapseWhitespace: isProd
           }
@@ -83,6 +83,13 @@ const optimization = () => {
         new HtmlWebpackPlugin({
           template: path.resolve(__dirname, 'src/portfolio__link.html'),
           filename: 'portfolio__link.html',
+          minify: {
+            collapseWhitespace: isProd
+          }
+        }),
+        new HtmlWebpackPlugin({
+          template: path.resolve(__dirname, 'src/team.html'),
+          filename: 'team.html',
           minify: {
             collapseWhitespace: isProd
           }

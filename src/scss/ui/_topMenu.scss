@@ -2,11 +2,20 @@
     padding-top: 248px;
     background:$bg-color;
     position: relative;
+    z-index: 1;
+
+    &-bg {
+        background-color:transparent;
+    }
 
     .breadcrumb {
         background-color: $bg-color;
         align-items:center;
         margin-bottom: 0;
+
+        &-bg {
+            background-color: transparent;
+        }
 
         &-item {
             a {
