@@ -94,6 +94,13 @@ const optimization = () => {
             collapseWhitespace: isProd
           }
         }),
+        new HtmlWebpackPlugin({
+          template: path.resolve(__dirname, 'src/contact.html'),
+          filename: 'contact.html',
+          minify: {
+            collapseWhitespace: isProd
+          }
+        }),
         new CssMinimizerPlugin(),
         new TerserPlugin(),
         new MiniCssExtractPlugin({

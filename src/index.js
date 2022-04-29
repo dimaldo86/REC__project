@@ -6,6 +6,7 @@ import './blog.html';
 import './portfolio.html';
 import './portfolio__link.html';
 import './team.html';
+import './contact.html'
 // подключение стилей
 import './scss/style.scss';
 import './js/main';
