@@ -1,35 +1,55 @@
-@import './top-header';
-@import './menu';
-@import './dropdownMenu.scss';
-@import './header.scss';
-@import './burger.scss';
-@import './overlay.scss';
-@import './promo';
-@import './service';
-@import './benefit';
-@import './popup';
-@import './object';
-@import './divider-link';
-@import './portfolio';
-@import './partners';
-@import './about';
-@import './contact';
-@import './social';
-@import './form';
-@import './footer';
-@import '../ui/topMenu';
-@import './mission';
-@import './copyright';
-@import './problem';
-@import './acceptance';
-@import './list';
-@import './blog';
-@import './pagination';
-@import '../ui/top__block';
-@import './jobs';
-@import './gallery';
-@import './map';
-@import './description';
+
+// header
+@import './header/top-header';
+@import './header/menu';
+@import './header/dropdownMenu';
+@import './header/header';
+@import './header/burger';
+
+// main-page
+@import './main-page/object';
+@import './main-page/promo';
+@import './main-page/service';
+@import './main-page/benefit';
+@import './main-page/portfolio';
+@import './main-page/partners';
+@import './main-page/about';
+@import './main-page/contact';
+
+// about-page
+@import './about-page/mission';
+@import './about-page/copyright';
+@import './about-page/problem';
+@import './about-page/list';
+
+// service-page
+@import './service-page/acceptance';
+
+// blog-page
+@import './blog-page/blog';
+@import './blog-page/pagination';
+
+// portfolio-page
+@import './portfolio-page/jobs';
+@import './portfolio-page/gallery';
+@import './portfolio-page/map';
+
+// portfolio-link-page
+@import './portfolio-link-page/description';
+
+// team-page
 @import './team-page/team';
+
+// contact-page
+@import './contact-page/location';
+
+// ui
+@import '../ui/overlay';
+@import '../ui/popup';
+@import '../ui/divider-link';
+@import '../ui/social';
+@import '../ui/form';
+@import '../ui/footer';
+@import '../ui/topMenu';
 @import '../ui/stat';
-@import './contact-page/location'
+@import '../ui/top__block';
