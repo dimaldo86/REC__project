@@ -5,6 +5,8 @@ const popup = (popupSelector, triggerSelector, closeSelector, overlaySelector) =
         popupClose = document.querySelector(closeSelector),
         popupOverlay = document.querySelector(overlaySelector);
 
+    let width = window.innerWidth;
+
 
         const lockScroll = () => {
             document.body.classList.add('lock');
@@ -13,10 +15,6 @@ const popup = (popupSelector, triggerSelector, closeSelector, overlaySelector) =
         const unlockScroll = () => {
             document.body.classList.remove('lock');
         };
-
-
-
-        let width = window.innerWidth;
 
        if (width <= 575 ) {
 

@@ -49,6 +49,13 @@
         opacity: 1;
         visibility: visible;
 
+        &.hidden {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            left: -100%;
+        }
+
         &:hover {
             transform: translateY(-4px);
             box-shadow: 6px -3px 11px 6px rgba(34, 60, 80, 0.2);

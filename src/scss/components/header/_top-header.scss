@@ -4,57 +4,8 @@
     height: 33px;
 
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-
-    &__flag {
-        position: relative;
-
-        width: 84px;
-        min-height: 33px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-
-        transition: 0.5s all linear;
-
-        &:hover, &:active, &:focus {
-            cursor: pointer;
-            background: $lang-bgcolor;
-        }
-    }
-    .flag__uk {
-        display: none;
-        width: 30px;
-        height: 20px;
-        margin-top: 16px;
-        // visibility: hidden;
-        // opacity: 0;
-        // z-index: -1;
-        // transition: all 0.3s ease-in-out;
-
-        // &.show {
-        //     visibility: visible;
-        //     opacity: 1;
-        //     z-index: 99;
-        // }
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-      }
-      .flag__russia {
-        width: 30px;
-        height: 20px;
-
-        img {
-            width: 30px;
-            height: 100%;
-        }
-      }
-  
+    align-items: center;
+    justify-content: flex-end;
 
     &__feedback {
         display: flex;
@@ -66,12 +17,12 @@
 
         font-size: 16px;
         font-weight: 500;
-      
+
         border: 1px solid $blue-text;
         border-radius: 5px;
         transition: .2s all linear;
 
-        &:hover, &:active, &:focus {
+        &:hover {
             cursor: pointer;
             border: 1px solid $secondary-color;
         }
@@ -87,25 +38,7 @@
         }
     }
   }
-  
- .top__flag-arrow {
-    position: absolute;
-    top:9px;
-    left:40px;
 
-    width: 18px;
-    height: 14px;
-    cursor: pointer;
 
-    path {
-        fill: $blue-text;
-    }
-}
-.bottom__arrow {
-    transform: rotate(90deg);
 
-    &--active {
-        transition: all 0.3s linear;
-        transform: rotate(270deg);
-    }
-}
+

@@ -2,8 +2,9 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    justify-content: flex-end;
     margin-top: 15px;
-    min-height: 47px;
+    min-height: 80px;
     padding: 0;
 
     @media (max-width: 991px) {
@@ -66,7 +67,7 @@
         border: none;
         border-radius: 0;
         min-width: 9rem;
-        border: 1px solid $primary-color;
+        border:none;
     }
 
     .dropdown-item {
@@ -165,6 +166,7 @@
             .top {
                 display: flex;
                 align-self: center;
+                justify-content: center;
                 margin: 20px 0;
 
                 .top__feedback-link {

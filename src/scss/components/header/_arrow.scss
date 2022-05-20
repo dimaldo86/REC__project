@@ -1,0 +1,22 @@
+.top__flag-arrow {
+    position: absolute;
+    top:9px;
+    left:40px;
+
+    width: 18px;
+    height: 14px;
+    cursor: pointer;
+
+    path {
+        fill: $blue-text;
+    }
+}
+.bottom__arrow {
+    transform: rotate(90deg);
+    transition: all 0.3s linear;
+
+    &.active {
+        transition: all 0.3s linear;
+        transform: rotate(270deg);
+    }
+}

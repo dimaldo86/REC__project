@@ -1,6 +1,6 @@
 const redBurger = () => {
-    const burger = document.querySelector('.burger-red'), 
-            triggerBurger = document.querySelector('.burger__icon'), 
+    const burger = document.querySelector('.burger-red'),
+            triggerBurger = document.querySelector('.burger__icon'),
             submenu = document.querySelector('.submenu');
 
     const lockScroll = () => {
@@ -21,8 +21,9 @@ const redBurger = () => {
 
     });
 
+    unlockScroll()
+
 
     };
 
 export default redBurger;
-    
