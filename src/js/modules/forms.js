@@ -4,6 +4,8 @@ const forms = () => {
     const form = document.querySelector('form'),
           inputs = document.querySelectorAll('input');
 
+          console.log(form);
+
 
     const message = {
         loading: 'Загрузка...',
@@ -15,7 +17,7 @@ const forms = () => {
     const postData = async (url, data) => {
         document.querySelector('.status').textContent = message.loading;
         let res = await fetch(url, {
-            method: 'POST',
+            method: 'GET',
             body: data,
         });
 

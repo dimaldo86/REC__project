@@ -30,22 +30,22 @@
 
             </div> <!--row-->
 
-            <div class="row row__bottom">
+            <div class="row ">
                 <nav class="nav">
 
                     <div class="col-md-3">
-                        <div href="#" class="logo__link ">
+                        <a href="./" class="logo__link ">
                             <img src="./img/svg/Logo.svg" alt="REC">
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-9 ">
                         <ul class="menu">
-                            <div class="top">
+                            <li class="top">
                                <div class="top__feedback">
                                     <a href="#" class="top__feedback-link">Обратная связь</a>
                                </div>
 
-                            </div> <!--  top -->
+                            </li> <!--  top -->
                             <li class="menu__item">
                                 <a href="./" class="menu__link">Главная</a>
                             </li>
@@ -133,6 +133,7 @@
                                                     </li>
                                                 </ul>
                                             </li>
+                                        </ol>
                                     </li>
                                 </ul>
                             </li>
@@ -155,6 +156,7 @@
 
                 </nav> <!--nav-->
             </div> <!--row-->
+        </div> <!--container-->
     </header>
 <!--header end-->
 <!--main start-->
@@ -367,18 +369,19 @@
     <div class="modal-main">
         <div class="container">
 
+
             <div class="modal__overlay"></div>
 
             <div class="modal__wrapper">
-
                 <span class="modal__close">&times;</span>
 
                 <div class="modal__content">
 
-                    <p class="modal__text text__top">Мы находим
-        инженерные и проектные решения, которые помогают
-        развитию проекта, устраняют преграды и помогают
-        стать на путь к успеху в реализации проекта. </p>
+                    <p class="modal__text text__top">
+                        Мы находим инженерные и проектные решения, которые помогают
+                        развитию проекта, устраняют преграды и помогают
+                        стать на путь к успеху в реализации проекта.
+                    </p>
                     <p class="modal__text text__bottom">Которые
         помогают развитию проекта, устраняют преграды и
         помогают стать на путь к успеху в реализации
@@ -398,11 +401,11 @@
 
                 </div>  <!--modal__content-->
 
-                <form action="#" class="form mt-0" method="post">
+                <form action="#" class="form mt-0" method="get">
 
                     <div class="form__input">
-                        <input class="form__name" type="text" name="name" placeholder="Ваше имя" required>
-                        <label class="form__label" for="name">*</label>
+                        <label class="form__label" for="firstName">*</label>
+                        <input class="form__name" type="text" id="firstName" placeholder="Ваше имя" required>
                     </div>
 
                         <select class="form__select">

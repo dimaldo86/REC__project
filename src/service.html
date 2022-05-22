@@ -34,18 +34,18 @@
                 <nav class="nav">
 
                     <div class="col-md-3">
-                        <div href="#" class="logo__link ">
+                        <a href="./" class="logo__link ">
                             <img src="./img/svg/Logo.svg" alt="REC">
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-9 ">
                         <ul class="menu">
-                            <div class="top">
+                            <li class="top">
                                <div class="top__feedback">
                                     <a href="#" class="top__feedback-link">Обратная связь</a>
                                </div>
 
-                            </div>  <!--top-->
+                            </li>  <!--top-->
                             <li class="menu__item">
                                 <a href="./" class="menu__link active-link">Главная</a>
                             </li>
@@ -62,7 +62,7 @@
                                 <div class="burger burger-red">
                                     <div></div>
                                 </div>
-                                <a href="#" class="menu__link">Услуги</a>
+                                <a href="#" class="menu__link ">Услуги</a>
                                 <ul class="submenu">
                                     <li class="submenu__item">
                                         <a href="#" class="submenu__link">
@@ -133,6 +133,7 @@
                                                     </li>
                                                 </ul>
                                             </li>
+                                        </ol>
                                     </li>
                                 </ul>
                             </li>
@@ -155,6 +156,7 @@
 
                 </nav> <!--nav-->
             </div> <!--row-->
+        </div> <!--container-->
     </header>
 <!--header end-->
 <!--main start-->
@@ -338,67 +340,68 @@
 </section>
 <!--object end-->
 <!--contact start-->
-        <section class="contact">
-            <div class="container">
-             <div class="row">
-                 <div class="col-lg-5">
-                     <h2 class="contact__title">Свяжитесь с нами</h2>
-                     <div class="contact__desc">
-                         <p>
-                             Мы находим инженерные и проектные решения, которые помогают развитию проекта, устраняют преграды и помогают стать на путь к успеху в реализации проекта.
-                         </p>
-                         <p class="contact__desc-low">
-                             Которые помогают развитию проекта, устраняют преграды и помогают стать на путь к успеху в реализации проекта.
-                         </p>
-                     </div>
-                     <div class="social">
-                         <a class="social__item viber" href="viber://chat?number=7903xxxxxxx">
-                             <img src="./img/contact/viber.png" alt="Viber">
-                         </a>
-                         <a class="social__item wattsapp" href="whatsapp://send?phone=+7903xxxxxxx">
-                             <img src="./img/contact/wattsApp.png" alt="WattsApp">
-                         </a>
-                         <a class="social__item telegram" href="tg://resolve?domain=имя_пользователя">
-                             <img src="./img/contact/telegram.png" alt="Telegram">
-                         </a>
-                     </div>
+    <section class="contact">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <h2 class="contact__title">Свяжитесь с нами</h2>
+                <div class="contact__desc">
+                    <p>
+                        Мы находим инженерные и проектные решения, которые помогают развитию проекта, устраняют преграды и помогают стать на путь к успеху в реализации проекта.
+                    </p>
+                    <p class="contact__desc-low">
+                        Которые помогают развитию проекта, устраняют преграды и помогают стать на путь к успеху в реализации проекта.
+                    </p>
+                </div>
+                <div class="social">
+                    <a class="social__item viber" href="viber://chat?number=7903xxxxxxx">
+                        <img src="./img/contact/viber.png" alt="Viber">
+                    </a>
+                    <a class="social__item wattsapp" href="whatsapp://send?phone=+7903xxxxxxx">
+                        <img src="./img/contact/wattsApp.png" alt="WattsApp">
+                    </a>
+                    <a class="social__item telegram" href="tg://resolve?domain=имя_пользователя">
+                        <img src="./img/contact/telegram.png" alt="Telegram">
+                    </a>
+                </div>
 
 
-                 </div> <!--col-lg-5-->
+            </div> <!--col-lg-5-->
 
-                 <div class="col-lg-6 offset-lg-1">
-                     <form action="#" class="form" method="post">
+            <div class="col-lg-6 offset-lg-1">
+                <form action="#" class="form" method="get">
 
-                         <div class="form__input">
-                             <input class="form__name" type="text" name="name" placeholder="Ваше имя" required>
-                             <label class="form__label" for="name">*</label>
-                         </div>
+                    <div class="form__input">
+                        <label class="form__label" for="name">*</label>
+                        <input class="form__name" type="text" id="name" placeholder="Ваше имя" required>
 
-                             <select class="form__select">
-                                 <option value="Предпочтительный способ связи" selected>Предпочтительный способ связи</option>
-                                 <option value="Звонок по телефону">Звонок по телефону</option>
-                                 <option value="Email">Email</option>
-                                 <option value="Мессенджеры">Мессенджеры</option>
-                             </select>
+                    </div>
 
-                         <input type="text" placeholder="Компания">
-                         <textarea class="form__msg" name="msg" placeholder="Сообщение..." ></textarea>
+                        <select class="form__select">
+                            <option value="Предпочтительный способ связи" selected>Предпочтительный способ связи</option>
+                            <option value="Звонок по телефону">Звонок по телефону</option>
+                            <option value="Email">Email</option>
+                            <option value="Мессенджеры">Мессенджеры</option>
+                        </select>
 
-                         <button class="form__btn" type="submit">
-                             <i class="bi bi-arrow-right"></i>
-                             СВЯЗАТЬСЯ
-                         </button>
-                     </form>
-                 </div> <!--col-lg-6-->
-             </div> <!--row-->
+                    <input type="text" placeholder="Компания">
+                    <textarea class="form__msg" name="msg" placeholder="Сообщение..." ></textarea>
 
-             <div class="row">
-                 <div class="col-lg-7 offset-lg-5">
-                     <div class="contact__bg"></div>
-                </div> <!--col-lg-7-->
-             </div>
-            </div> <!--container-->
-        </section>
+                    <button class="form__btn" type="submit">
+                        <i class="bi bi-arrow-right"></i>
+                        СВЯЗАТЬСЯ
+                    </button>
+                </form>
+            </div> <!--col-lg-6-->
+        </div> <!--row-->
+
+        <div class="row">
+            <div class="col-lg-7 offset-lg-5">
+                <div class="contact__bg"></div>
+            </div> <!--col-lg-7-->
+        </div>
+        </div> <!--container-->
+    </section>
 <!--contact end-->
     </main>
 <!--main end-->
@@ -471,17 +474,19 @@
     <div class="modal-main">
         <div class="container">
 
+
             <div class="modal__overlay"></div>
 
             <div class="modal__wrapper">
-
                 <span class="modal__close">&times;</span>
+
                 <div class="modal__content">
 
-                    <p class="modal__text text__top">Мы находим
-        инженерные и проектные решения, которые помогают
-        развитию проекта, устраняют преграды и помогают
-        стать на путь к успеху в реализации проекта. </p>
+                    <p class="modal__text text__top">
+                        Мы находим инженерные и проектные решения, которые помогают
+                        развитию проекта, устраняют преграды и помогают
+                        стать на путь к успеху в реализации проекта.
+                    </p>
                     <p class="modal__text text__bottom">Которые
         помогают развитию проекта, устраняют преграды и
         помогают стать на путь к успеху в реализации
@@ -501,11 +506,11 @@
 
                 </div>  <!--modal__content-->
 
-                <form action="#" class="form mt-0" method="post">
+                <form action="#" class="form mt-0" method="get">
 
                     <div class="form__input">
-                        <input class="form__name" type="text" name="name" placeholder="Ваше имя" required>
-                        <label class="form__label" for="name">*</label>
+                        <label class="form__label" for="firstName">*</label>
+                        <input class="form__name" type="text" id="firstName" placeholder="Ваше имя" required>
                     </div>
 
                         <select class="form__select">

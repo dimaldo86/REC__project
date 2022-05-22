@@ -14,14 +14,22 @@ const redBurger = () => {
 
 
     triggerBurger.addEventListener('click', (e) => {
+        let target = e.target;
 
-        burger.classList.add('open');
-        submenu.classList.add('show');
-        lockScroll();
+        console.log(target);
 
+        if (target.matches('.menu__link')) {
+            burger.classList.toggle('open');
+            submenu.classList.toggle('show');
+
+            lockScroll();
+        } else {
+            unlockScroll();
+        }
+        unlockScroll();
     });
 
-    unlockScroll()
+
 
 
     };

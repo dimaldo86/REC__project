@@ -10,6 +10,7 @@ import checkTextInputs from './modules/checkTextInputs';
 import { swiper, swiperGalery, swiper2, swiper3 } from './modules/swiper';
 import showCard from './modules/showCard';
 import modal from './modules/modal';
+import arrowShow from './modules/arrowShow';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -47,5 +48,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     modal();
 
+    arrowShow('[data-bs-toggle="dropdown"]', '.bottom__arrow');
 
 });

@@ -28,13 +28,16 @@ const popup = (popupSelector, triggerSelector, closeSelector, overlaySelector) =
                 });
             });
 
-            popupClose.addEventListener('click', () => {
+            if (popupClose) {
+                popupClose.addEventListener('click', () => {
 
-                popup.classList.remove('active');
-                popupOverlay.classList.remove('active');
-                popupClose.classList.remove('active');
-                unlockScroll();
-            });
+                    popup.classList.remove('active');
+                    popupOverlay.classList.remove('active');
+                    popupClose.classList.remove('active');
+                    unlockScroll();
+                });
+            }
+
 
             window.addEventListener('click', (e) => {
                 if ( e.target === popupOverlay) {
