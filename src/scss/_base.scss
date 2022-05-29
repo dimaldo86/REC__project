@@ -38,13 +38,11 @@
     color:$blue-text;
   }
 
-
-
-  .transition-fade {
-    transition: 0.4s;
-    opacity: 1;
+  .status {
+    display: block;
+    color:$secondary-color;
+    font-size: 16px;
+    margin-top: 10px;
   }
 
-  html.is-animating .transition-fade {
-    opacity: 0;
-  }
+ 

@@ -13,7 +13,12 @@ import modal from './modules/modal';
 import arrowShow from './modules/arrowShow';
 
 
+
+
+
 window.addEventListener('DOMContentLoaded', () => {
+
+    let modalState = {};
 
     accordion('.submenu__link');
 
@@ -36,7 +41,7 @@ window.addEventListener('DOMContentLoaded', () => {
     checkTextInputs('[name="msg"]');
 
 
-    forms();
+    forms(modalState);
 
 
     swiper;

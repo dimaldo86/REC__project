@@ -1,10 +1,9 @@
 
 
-const forms = () => {
-    const form = document.querySelector('form'),
-          inputs = document.querySelectorAll('input');
+const forms = (state) => {
 
-          console.log(form);
+    const form = document.querySelectorAll('form'),
+           inputs = document.querySelectorAll('input');
 
 
     const message = {
@@ -17,7 +16,7 @@ const forms = () => {
     const postData = async (url, data) => {
         document.querySelector('.status').textContent = message.loading;
         let res = await fetch(url, {
-            method: 'GET',
+            method: 'POST',
             body: data,
         });
 
@@ -31,18 +30,18 @@ const forms = () => {
         });
     };
 
-    for (let i = 0; i < form.elements.length; i++)  {
-        form.elements[i].addEventListener('submit', (e) => {
+    form.forEach (item => {
+        item.addEventListener('submit', (e) => {
             e.preventDefault();
 
             let statusMessage = document.createElement('div');
             statusMessage.classList.add('status');
-            form.elements[i].appendChild(statusMessage);
+            item.appendChild(statusMessage);
 
-            const formData = new FormData( form.elements[i]);
+            const formData = new FormData(item);
 
 
-            postData('../assets/server.php', formData)
+            postData('assets/server.php', formData)
             .then( res => {
                 console.log (res);
                 statusMessage.textContent = message.success;
@@ -57,7 +56,9 @@ const forms = () => {
 
 
         });
-    };
+    });
+
+
 };
 
 export default forms;

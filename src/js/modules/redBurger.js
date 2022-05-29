@@ -16,8 +16,6 @@ const redBurger = () => {
     triggerBurger.addEventListener('click', (e) => {
         let target = e.target;
 
-        console.log(target);
-
         if (target.matches('.menu__link')) {
             burger.classList.toggle('open');
             submenu.classList.toggle('show');

@@ -738,71 +738,70 @@
         </section>
 <!--map end-->
 <!--contact start-->
-        <section class="contact">
-            <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <h2 class="contact__title">Свяжитесь с нами</h2>
-                    <div class="contact__desc">
-                        <p>
-                            Мы находим инженерные и проектные решения, которые помогают развитию проекта, устраняют преграды и помогают стать на путь к успеху в реализации проекта.
-                        </p>
-                        <p class="contact__desc-low">
-                            Которые помогают развитию проекта, устраняют преграды и помогают стать на путь к успеху в реализации проекта.
-                        </p>
+    <section class="contact">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <h2 class="contact__title">Свяжитесь с нами</h2>
+                <div class="contact__desc">
+                    <p>
+                        Мы находим инженерные и проектные решения, которые помогают развитию проекта, устраняют преграды и помогают стать на путь к успеху в реализации проекта.
+                    </p>
+                    <p class="contact__desc-low">
+                        Которые помогают развитию проекта, устраняют преграды и помогают стать на путь к успеху в реализации проекта.
+                    </p>
+                </div>
+                <div class="social">
+                    <a class="social__item viber" href="viber://chat?number=7903xxxxxxx">
+                        <img src="./img/contact/viber.png" alt="Viber">
+                    </a>
+                    <a class="social__item wattsapp" href="whatsapp://send?phone=+7903xxxxxxx">
+                        <img src="./img/contact/wattsApp.png" alt="WattsApp">
+                    </a>
+                    <a class="social__item telegram" href="tg://resolve?domain=имя_пользователя">
+                        <img src="./img/contact/telegram.png" alt="Telegram">
+                    </a>
+                </div>
+
+
+            </div> <!--col-lg-5-->
+
+            <div class="col-lg-6 offset-lg-1">
+                <form action="#" class="form" method="post">
+
+                    <div class="form__input">
+                        <label class="form__label" for="name">*</label>
+                        <input class="form__name" type="text" id="name" placeholder="Ваше имя" required>
+
                     </div>
-                    <div class="social">
-                        <a class="social__item viber" href="viber://chat?number=7903xxxxxxx">
-                            <img src="./img/contact/viber.png" alt="Viber">
-                        </a>
-                        <a class="social__item wattsapp" href="whatsapp://send?phone=+7903xxxxxxx">
-                            <img src="./img/contact/wattsApp.png" alt="WattsApp">
-                        </a>
-                        <a class="social__item telegram" href="tg://resolve?domain=имя_пользователя">
-                            <img src="./img/contact/telegram.png" alt="Telegram">
-                        </a>
-                    </div>
 
+                        <select class="form__select">
+                            <option value="Предпочтительный способ связи" selected>Предпочтительный способ связи</option>
+                            <option value="Звонок по телефону">Звонок по телефону</option>
+                            <option value="Email">Email</option>
+                            <option value="Мессенджеры">Мессенджеры</option>
+                        </select>
 
-                </div> <!--col-lg-5-->
+                    <input type="text" placeholder="Компания">
+                    <textarea class="form__msg" name="msg" placeholder="Сообщение..." ></textarea>
 
-                <div class="col-lg-6 offset-lg-1">
-                    <form action="#" class="form" method="post">
+                    <button class="form__btn" type="submit">
+                        <i class="bi bi-arrow-right"></i>
+                        СВЯЗАТЬСЯ
+                    </button>
+                </form>
+            </div> <!--col-lg-6-->
+        </div> <!--row-->
 
-                        <div class="form__input">
-                            <label class="form__label" for="name">*
-                                <input class="form__name" type="text" id="name" placeholder="Ваше имя" required>
-                            </label>
-
-                        </div>
-
-                            <select class="form__select">
-                                <option value="Предпочтительный способ связи" selected>Предпочтительный способ связи</option>
-                                <option value="Звонок по телефону">Звонок по телефону</option>
-                                <option value="Email">Email</option>
-                                <option value="Мессенджеры">Мессенджеры</option>
-                            </select>
-
-                        <input type="text" placeholder="Компания">
-                        <textarea class="form__msg" name="msg" placeholder="Сообщение..." ></textarea>
-
-                        <button class="form__btn" type="submit">
-                            <i class="bi bi-arrow-right"></i>
-                            СВЯЗАТЬСЯ
-                        </button>
-                    </form>
-                </div> <!--col-lg-6-->
-            </div> <!--row-->
-
-            <div class="row">
-                <div class="col-lg-7 offset-lg-5">
-                    <div class="contact__bg"></div>
-                </div> <!--col-lg-7-->
-            </div>
-            </div> <!--container-->
-        </section>
+        <div class="row">
+            <div class="col-lg-7 offset-lg-5">
+                <div class="contact__bg"></div>
+            </div> <!--col-lg-7-->
+        </div>
+        </div> <!--container-->
+    </section>
 <!--contact end-->
-    </main>
+    </main >
 <!--main end-->
 <!--footer start-->
     <footer class="footer">
@@ -927,7 +926,7 @@
 
                 </div>  <!--modal__content-->
 
-                <form action="#" class="form mt-0" method="get">
+                <form action="#" class="form mt-0" method="post">
 
                     <div class="form__input">
                         <label class="form__label" for="firstName">*</label>
